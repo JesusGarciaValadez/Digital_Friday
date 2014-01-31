@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Jesús Antonio García Valadez -- Front End & Back End Developer -- @_Chucho_
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, SASS, HTML5 Boilerplate
+    jQuery, Modernizr
+    ModX Revolution
