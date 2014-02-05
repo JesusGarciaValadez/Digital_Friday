@@ -4,6 +4,7 @@
 # TEAM
 
     Jesús Antonio García Valadez -- Front End & Back End Developer -- @_Chucho_
+    Sayed Azamar                 -- Designer                       -- @SkepticalSayed
 
 # THANKS
 
@@ -13,4 +14,3 @@
 
     HTML5, CSS3, SASS, HTML5 Boilerplate
     jQuery, Modernizr
-    ModX Revolution

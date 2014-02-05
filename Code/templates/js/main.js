@@ -9,30 +9,30 @@
  */
 (function ( $, window, document, undefined ) {
     
-    var _Prometa    = window._Prometa, 
+    var _CMVDG    = window._CMVDG, 
     
     // Use the correct document accordingly with window argument (sandbox)
     document = window.document,
     location = window.location,
     navigator = window.navigator,
     
-    // Map over Prometa in case of overwrite
-    _Prometa    = window.Prometa;
+    // Map over CMVDG in case of overwrite
+    _CMVDG    = window.CMVDG;
     
-    // Define a local copy of Prometa
-    Prometa = function() {
-        if ( !( this instanceof Prometa ) ) {
+    // Define a local copy of CMVDG
+    CMVDG = function() {
+        if ( !( this instanceof CMVDG ) ) {
             
-            // The Prometa object is actually just the init constructor 'enhanced'
-            return new Prometa.fn.init();
+            // The CMVDG object is actually just the init constructor 'enhanced'
+            return new CMVDG.fn.init();
         }
-        return Prometa.fn.init();
+        return CMVDG.fn.init();
     };
     
-    Prometa.overlay;
+    CMVDG.overlay;
     
     //  Object prototyping
-    Prometa.fn = Prometa.prototype = {
+    CMVDG.fn = CMVDG.prototype = {
         /**
          *
          *  @function:  !constructor
@@ -41,7 +41,7 @@
          *
          */
         //  Método constructor
-        constructor:    Prometa, 
+        constructor:    CMVDG, 
         /**
          *
          *  @function:  !init
@@ -84,7 +84,7 @@
         //  !Ancla el menú cuando a una altura determinada mediante css
         anchorMenu: function ( selectorToApply, offsetTop, classToFix, classToDeFix ) {
             
-            Prometa.tool = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+            CMVDG.tool = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
             
             _selector       = ( typeof( selector ) == "undefined" ) ? "*" : selector;
             _selector       = ( typeof( _selector ) == "object" ) ? _selector : $( _selector );
@@ -95,7 +95,7 @@
             _classToFix     = ( typeof( _classToFix ) == "object" ) ? classToFix : {};
             _classToDeFix   = ( typeof( _classToDeFix ) == "object" ) ? classToDeFix : {};
             
-            if ( Prometa.tool >= _offsetTop ) {
+            if ( CMVDG.tool >= _offsetTop ) {
                 
                 _selectorToApply.css( toFix );
             } else {
@@ -103,65 +103,6 @@
                 _selectorToApply.css( toDeFix );
             }
         },
-        /**
-         *
-         *  @function:  !makeMapForContact
-         *  @description:   Makes the call and construction of the Google Maps layer
-         *  @params Number latitud.- A Number with the latitude of the point
-         *  @params Number longitud.- A Number with the longitude of the point
-         *  @params jQuery map.- A jQuery Selector 
-         *  @see:   https://developers.google.com/maps/documentation/javascript/reference?hl=es
-         *  @author: @_Chucho_
-         *
-         */
-        //  !Crea una instancia de Google Maps en una latitud y longitud dada.
-        makeMapForContact:  function ( latitud, longitud, map ) {
-            
-            //    !Method for load Google Maps into the page
-            var bounds = new google.maps.LatLngBounds();
-            var point = new google.maps.LatLng(latitud,longitud);
-            
-            var options = {
-                zoom : 15,
-                disableDefaultUI: true, 
-                disableDoubleClickZooom: true, 
-                overviewMapControl: false, 
-                panControl: false, 
-                rotateControl: false, 
-                scaleControl: false, 
-                scrollwheel: false, 
-                draggable: false, 
-                keyboardShortcuts: false, 
-                mapTypeControl: false,
-                mapTypeId: google.maps.MapTypeId.ROADMAP, //ROADMAP,
-                center: point
-            };
-            var googleMap = new google.maps.Map(map[0],options);
-            
-            bounds.extend(point);
-            
-            var marker = new google.maps.Marker({
-                animation: google.maps.Animation.DROP, 
-                position: point,
-                map: googleMap, 
-                icon:'Code/templates/img/markerBig.png'
-            });
-            
-            var infoWindow  = new google.maps.InfoWindow({
-                content: '', 
-                disableAutoPan: false, 
-                maxWidth: 250, 
-                pixelOffset: google.maps.Size(200, 200), 
-                position: point, 
-                zIndex: 10
-            });
-            infoWindow.open( googleMap );
-            
-            google.maps.event.addListener(marker, "click", function () {
-                    infoWindow.setContent(this.html);
-                    infoWindow.open(googleMap, this);
-            });
-        }, 
         /**
          *
          *  @function:  !validateContact
@@ -216,10 +157,7 @@
                         beforeSubmit: function showRequestLogin( arr, form, options ) {
                             
                             $('.error_indicator').remove();
-                            if ( $('textarea' ).val() == "" ) {
-                                
-                                $('textarea' ).val( 'Ninguno' );
-                            }
+                            $( ".spinner" ).fadeIn( 300 );
                         },
                         //  !Function for handle data from server
                         success: function showResponseLogin( responseText, statusText, xhr, form ) {
@@ -227,23 +165,18 @@
                             //console.log(responseText.success);
                             responseText    = $.parseJSON( responseText );
                             
+                            $( ".spinner" ).fadeOut( 300 );
+                            
                             if( responseText && ( responseText.success == 'true' || responseText.success == true ) ) {
                                 
-                                $( '.alert_box' ).addClass( 'thank_you_message' );
-                                var _title      = 'Gracias';
-                                var _markup     = '<p>Muchas gracias por haber contestado esta encuesta.</p>';
-                                Prometa.openAlert( _title, _markup );
-                                $( 'input[type="radio"]' ).removeAttr( 'checked');
-                                $( 'textarea' ).val( "" );
-                                $( form ).fadeOut( 300 );
+                                $( form ).fadeOut( 300, function () {
+                                    
+                                    
+                                } );
                             } else {
                                 
-                                $( '.alert_box' ).addClass( 'error_message' );
-                                var _title  = 'Error';
-                                var _markup = '<p>La encuesta no fue procesada correctamente. Por favor, contacta al administrador.</p>';
-                                Prometa.openAlert( _title, _markup );
+                                
                             }
-                            Prometa.smoothScroll( 'body' );
                         }, 
                         resetForm: false, 
                         clearForm: false, 
@@ -251,10 +184,6 @@
                         error: function( jqXHR, textStatus, errorThrown ) {
                             //console.log(textStatus);
                             //console.log(errorThrown);
-                            $( '.alert_box' ).addClass( 'error' );
-                            var _title  = 'Error';
-                            var _markup = '<p>La encuesta no fue procesada correctamente. Por favor, reporta este error al administrador.</p>';
-                            Prometa.openAlert( _title, _markup );
                         }, 
                         cache: false
                     } );
@@ -297,7 +226,7 @@
             
             $( '.alert_box h2' ).text( _title );
             $( '.alert_box' ).append( _message );
-            //Prometa.overlay.load();
+            //CMVDG.overlay.load();
             $( '.alert_trigger' ).click( );
             $( '.alert_box' ).centerHeight( );
             $( '.alert_box' ).centerWidth( );
@@ -318,7 +247,7 @@
         //  !Cierra un cuadro de diálogo con un mensaje
         closeAlert:  function ( ) {
             
-            Prometa.overlay.close();
+            CMVDG.overlay.close();
             /*$( '.alert_box' ).fadeOut( 'fast' );
             $( '.alert_background' ).fadeOut( 'fast' );
             $( '.alert_box h4' ).text( '' );
@@ -422,37 +351,6 @@
         }, 
         /**
          *
-         *  @function:  !managerTimelineFill
-         *  @description:   Carrousel inicializer
-         *  @params jQuery slider.- A jQuery Selector 
-         *  @params String progressBar.- A class to add to target
-         *  @params Object ui.- An object with css properties to apply to the jQuery selector
-         *  @params Number leftOffset.- A number to indicate the duration of the animation
-         *  @params Number rightOffset.- A number to indicate the duration of the animation
-         *  @see:   http://jquerytools.org
-         *  @author: @_Chucho_
-         *
-         */
-        //  !Inicializador de un carrusel jQuery Tools
-        inicializeCarrousel:    function ( selector, optionsScrollable, optionsNavigator, optionsAutoscroll ) {
-            
-            _selector       = ( typeof( selector )  == "undefined" ) ? "*" : selector;
-            _selector       = ( typeof( _selector ) == "object" )    ? _selector : $( _selector );
-            
-            if( !optionsScrollable || optionsScrollable == {} ) {
-                optionsScrollable = {};
-            }
-            if( !optionsNavigator || optionsNavigator == {} ) {
-                optionsNavigator = {};
-            }
-            if( !optionsAutoscroll || optionsAutoscroll == {} ) {
-                optionsAutoscroll = {};
-            }
-            
-            _selector.scrollable( optionsScrollable ).navigator( optionsNavigator ).autoscroll( optionsAutoscroll );
-        }, 
-        /**
-         *
          *  @function:  !toggleClass
          *  @description:   Toggle an HTML class
          *  @params jQuery selector.- A jQuery Selector 
@@ -473,16 +371,39 @@
                 _selector.toggleClass( _class );
             }
         }, 
+        getCenterWidth: function ( selector ) {
+            
+            var winWidth;
+            _selector       = ( typeof( selector )  == "undefined" ) ? "*" : selector;
+            _selector       = ( typeof( _selector ) == "object" )    ? _selector : $( _selector );
+            
+            if ( $.browser.msie && $.browser.version == '8.0' ) {
+                
+                winWidth    = $(window).width() / 2;
+            } else {
+                
+                winWidth    = window.innerWidth / 2;
+            }
+            
+            var elemWidth   = $( _selector ).width() / 2;
+            
+            if ( parseInt( winWidth - elemWidth ) < 100 ) {
+                
+                winWidth    = $( 'body' ).innerWidth() / 2;
+            }
+            
+            return elemLeft    = winWidth - elemWidth;
+        }
     };
     
-    // Give the init function the Prometa prototype for later instantiation
-    Prometa.fn.init.prototype = Prometa.fn;
+    // Give the init function the CMVDG prototype for later instantiation
+    CMVDG.fn.init.prototype = CMVDG.fn;
     
-    Prometa = Prometa.fn;
+    CMVDG = CMVDG.fn;
     
-    // Expose Prometa to the global object
+    // Expose CMVDG to the global object
     
-    window.Prometa  = Prometa;
+    window.CMVDG  = CMVDG;
     
     //  When DOM is loaded
     $( function ( ) {
@@ -494,144 +415,62 @@
         }
         
         //  Control del background
-        if ( $( "#wrapper_background" ).exists() ) {
+        if ( $( "h1" ).exists() ) {
             
-            var layers  = $( '#wrapper_background figure' ),
-                controllers = $( 'header a' ),
-                timeCounter = 0,
-                currentTab,
-                tabLength;
+            $( "h1" ).centerWidth();
+        }
+        if ( $( ".rocket" ).exists() ) {
             
-            layers.eq(0).addClass( 'current' );
+            $( ".rocket" ).centerWidth();
+        }
+        if ( $( ".session" ).exists() ) {
             
-            currentTab  = $( '#wrapper_background figure.current' ).index();
+            $( ".session" ).centerWidth();
+        }
+        if ( $( ".vertical_points" ).exists() ) {
             
-            //  Controla el cambio de background por medio de las flechas
-            $( controllers ).on( 'click', function ( e ) {
-                
-                e.preventDefault();
-                e.stopPropagation();
-                
-                currentTab  = $( '#wrapper_background figure.current' ).index();
-                
-                $( '#wrapper_background figure.current' ).fadeOut( 300, function () {
-                    
-                    $( this ).toggleClass( 'current' );
-                });
-                tabLength   = $( '#wrapper_background figure' ).length;
-                
-                if ( $( e.currentTarget ).hasClass( 'left' ) ) {
-                    
-                    if ( currentTab <= 1 ) {
-                        
-                        layers.eq( 0 ).fadeIn( 300, function () {
-                            
-                            layers.eq( tabLength - 2 ).addClass( 'current' );
-                        });
-                    } else {
-                        
-                        layers.eq( currentTab - 2 ).fadeIn( 300, function () {
-                            
-                            layers.eq( currentTab - 2 ).addClass( 'current' );
-                        });
-                    }
-                } else if ( $( e.currentTarget ).hasClass( 'right' ) ) {
-                    
-                    if ( currentTab >= tabLength ) {
-                        
-                        layers.eq( 0 ).fadeIn( 300, function () {
-                            
-                            layers.eq( 0 ).addClass( 'current' );
-                        });
-                    } else {
-                        
-                        layers.eq( currentTab ).fadeIn( 300, function () {
-                            
-                            layers.eq( currentTab ).addClass( 'current' );
-                        });
-                    }
-                }
-                
-                $( '#counter' ).css( 'width', 0 + 'px' );
-                timeCounter = 0;
-                
-                /*
-                
-                //  Obtiene el src de la imagen, busca "_small." en la ruta y lo
-                //  remplaza con "_small_hover." para que la imagen cambie por
-                //  la imagen con hover
-                var currentSrc  = $( '#wrapper_background figure.current img' ).attr( 'src' )
-                var newSrc      = currentSrc.replace( /\_hover/gi, ''  );
-                $( '#wrapper_background figure.current img' ).attr( 'src', newSrc );
-                $( '#wrapper_background figure.current' ).removeClass( 'current' );
-                $( e.currentTarget ).addClass( 'current' );
-                var name    = $( '#wrapper_background figure.current img' ).attr( 'src' );
-                name        = name.replace( /\_small\./gi, '_small_hover.' );
-                $( '#wrapper_background figure.current img' ).attr( 'src', name );
-                */
-            });
+            $( ".vertical_points" ).centerWidth();
+        }
+        if ( $( ".arrow" ).exists() ) {
             
-            if ( $( '#timer' ).exists() ) {
-                
-                //  Controla el cambio de background aprox. cada 10 segundos.
-                var interval   = setInterval( function ( ) {
-                    
-                    if ( timeCounter <= 100 ) {
-                        
-                        timeCounter += 0.1055;  //Sin Math.round
-                        //timeCounter += 0.150465;  // Con Math.round
-                    } else if ( timeCounter > 100 )  {
-                        
-                        currentTab  = $( '#wrapper_background figure.current' ).index();
-                        $( '#wrapper_background figure.current' ).fadeOut( 300, function () {
-                            
-                            $( this ).toggleClass( 'current' );
-                        });
-                        tabLength   = $( '#wrapper_background figure' ).length;
-                        
-                        if ( currentTab >= tabLength ) {
-                            
-                            layers.eq( 0 ).fadeIn( 300, function () {
-                                
-                                layers.eq( 0 ).addClass( 'current' );
-                            });
-                        } else {
-                            
-                            layers.eq( currentTab ).fadeIn( 300, function () {
-                                
-                                layers.eq( currentTab ).addClass( 'current' );
-                            });
-                        }
-                        timeCounter = 0;
-                    }
-                    
-                    $( '#counter' ).css( 'width', timeCounter + '%' );
-                }, 10 );
-            }
+            $( ".arrow" ).centerWidth();
+        }
+        if ( $( ".hands" ).exists() ) {
+            
+            $( ".hands" ).centerWidth();
+        }
+        if ( $( "#DG_Logo" ).exists() ) {
+            
+            $( "#DG_Logo" ).centerWidth();
+        }
+        if ( $( "#six .points" ).exists() ) {
+            
+            var pointOne    = CMVDG.getCenterWidth( $( "#six .points" ).eq( 0 ) ) - 85;
+            var pointTwo    = CMVDG.getCenterWidth( $( "#six .points" ).eq( 1 ) ) + 25;
+            
+            $( "#six .points" ).eq( 0 ).css( { 
+                left: pointOne + 'px'
+            } );
+            $( "#six .points" ).eq( 1 ).css( { 
+                left: pointTwo + 'px'
+            } );
+        }
+        if ( $( "h3" ).exists() ) {
+            
+            $( "h3" ).centerWidth();
+        }
+        if ( $( "h4" ).exists() ) {
+            
+            $( "h4" ).centerWidth();
+        }
+        if ( $( "form" ).exists() ) {
+            
+            $( "form" ).centerWidth();
         }
     } );
     
     //  When DOM is ready
     $( document ).on( 'ready', function ( e ) {
-        
-        //  Arregla tamaños del background al iniciar y al redimensionar la ventana
-        if ( $( '#wrapper_background' ).exists() ) {
-            
-            var calculateHeight = function () {
-                
-                var screenHeight    = window.innerHeight;
-                $( '#wrapper_background' ).height( screenHeight );
-                var newHeight       = screenHeight - 55;
-                $( '#nav' ).css( 'top', newHeight + 'px' );
-                $( '#header' ).centerWidth();
-            }
-            calculateHeight();
-            
-            $( window ).on( 'resize', function ( e ) {
-                
-                calculateHeight();
-            } );
-        }
         
         if ( $( '#nav' ).exists() ) {
             
@@ -640,10 +479,10 @@
                 e.preventDefault();
                 e.stopPropagation();
                 
-                Prometa.smoothScroll( '#home', 300 );
+                CMVDG.smoothScroll( '#home', 300 );
                 
                 $( 'nav ul li' ).removeClass( 'active' );
-                Prometa.toggleClass( $( e.currentTarget ).parent(), 'active' );
+                CMVDG.toggleClass( $( e.currentTarget ).parent(), 'active' );
             } );
             $( 'a[title="Contacto"]' ).on( 'click', function ( e ) {
                 
@@ -651,28 +490,17 @@
                 e.stopPropagation();
                 
                 var topOffset   = $( '#contact_title' ).offset().top - 55;
-                Prometa.smoothScroll( topOffset, 300 );
+                CMVDG.smoothScroll( topOffset, 300 );
                 
                 $( 'nav ul li' ).removeClass( 'active' );
-                Prometa.toggleClass( $( e.currentTarget ).parent(), 'active' );
-            } );
-        }
-        
-        //  Construye el Google Maps
-        if ( $( '#map' ).exists() ) {
-            
-            Prometa.makeMapForContact( 19.434381, -99.19723, $( '#map' ) );
-            
-            $( window ).on( 'resize', function ( e ) {
-                
-                Prometa.makeMapForContact( 19.434381, -99.19723, $( '#map' ) );
+                CMVDG.toggleClass( $( e.currentTarget ).parent(), 'active' );
             } );
         }
         
         //  !Crea una instancia de jQuery Overlay
         if ( $( '.alert_box' ).exists() ) {
             
-            Prometa.doOverlay( $( 'a.alert_trigger' ), {
+            CMVDG.doOverlay( $( 'a.alert_trigger' ), {
                 effect: 'apple',
                 close: $( '.alert_box a.close' ),
                 closeOnClick: true,
@@ -707,7 +535,7 @@
                 }
             } );
             
-            Prometa.overlay    = $( '.alert_trigger' ).data( 'overlay' );
+            CMVDG.overlay    = $( '.alert_trigger' ).data( 'overlay' );
             
             $( '.alert_background' ).height( $( 'body' ).height() );
         }
@@ -725,7 +553,7 @@
                 
                 var myVideo = document.getElementsByTagName( 'video' )[ 0 ];
             }
-            Prometa.doOverlay( 'img[rel]', {
+            CMVDG.doOverlay( 'img[rel]', {
                 effect: 'apple', 
                 // custom top position
                 //top: 260,
@@ -821,12 +649,12 @@
         // Validación de los formularios
         if ( $( 'form' ).exists() ) {
             
-            Prometa.makesUniform( 'select' );
+            CMVDG.makesUniform( 'select' );
             
-            Prometa.toggleValue( '#contact_name', 'Nombre' );
-            Prometa.toggleValue( '#contact_business', 'Empresa' );
-            Prometa.toggleValue( '#contact_phone', 'Teléfono' );
-            Prometa.toggleValue( '#contact_mail', 'Email' );
+            CMVDG.toggleValue( '#contact_name', 'Nombre' );
+            CMVDG.toggleValue( '#contact_business', 'Empresa' );
+            CMVDG.toggleValue( '#contact_phone', 'Teléfono' );
+            CMVDG.toggleValue( '#contact_mail', 'Email' );
             
             var rules   = { 
                     one: {
@@ -897,56 +725,8 @@
                     digits: "Escriba solo números", 
                 }
             
-            Prometa.validateForms( rules, messages );
+            CMVDG.validateForms( rules, messages );
         }
-        
-        //  Handler de contenido de textarea
-        if ( $( 'textarea' ).exists() ) {
-            
-            $( 'textarea' ).val( 'Mensaje' );
-            Prometa.toggleValue( 'textarea', "Mensaje" );
-        }
-        
-        //  Carruseles y efectos del Home
-        if ( $( '#one' ).exists() ) {
-            
-            Prometa.inicializeCarrousel( '#header_scrollable', {
-                speed: 1000, 
-                circular: true, 
-                keyboard: false, 
-                next: null, 
-                prev: null
-            }, {
-                activeClass: "active", 
-                navi: ".navi", 
-                naviItem: "a", 
-                indexed: false
-            }, {
-                steps: 1, 
-                interval: 10000, 
-                autoplay: true, 
-                autopause: true
-            } );
-            Prometa.inicializeCarrousel( '#tips_scrollable', {
-                speed: 1000, 
-                circular: true, 
-                keyboard: false, 
-                next: ".next", 
-                prev: ".prev"
-            }, {
-                activeClass: "active", 
-                navi: ".naviTabs", 
-                naviItem: "a", 
-                indexed: true
-            }, {
-                steps: 1, 
-                interval: 15000, 
-                autoplay: true, 
-                autopause: true
-            } );
-            
-        }
-        
     } );
     
 })( jQuery, window, document );
