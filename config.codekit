@@ -230,7 +230,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/main.js",
-		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/main.min.js",
+		"outputAbbreviatedPath": "\/js\/main.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -240,7 +240,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/plugins.js",
-		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/plugins.min.js",
+		"outputAbbreviatedPath": "\/js\/plugins.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -250,7 +250,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/vendor\/jquery-1.10.2.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/jquery-1.10.2.min.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/js\/jquery-1.10.2.min.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -260,7 +260,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/vendor\/modernizr-2.6.2.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/modernizr-2.6.2.min.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/js\/modernizr-2.6.2.min.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -303,7 +303,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/css\/sass\/home.scss",
-		"outputAbbreviatedPath": "\/Code\/templates\/css\/home.css",
+		"outputAbbreviatedPath": "\/css\/home.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
@@ -318,7 +318,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/css\/sass\/main.scss",
-		"outputAbbreviatedPath": "\/Code\/templates\/css\/main.css",
+		"outputAbbreviatedPath": "\/css\/main.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
@@ -333,7 +333,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/css\/sass\/normalize.min.scss",
-		"outputAbbreviatedPath": "\/Code\/templates\/css\/normalize.min.css",
+		"outputAbbreviatedPath": "\/css\/normalize.min.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
@@ -360,216 +360,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/Code\/templates\/img\/digital_friday\/barra_header.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 990,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/barra_header.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/barra_header.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/bg_degradado.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 49555,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/bg_degradado.jpg",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/bg_degradado.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/check_in.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2125,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/check_in.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/check_in.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/cmv_header.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3781,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/cmv_header.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/cmv_header.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/cohete_1.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 10153,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/cohete_1.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/cohete_1.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/cohete_sn_fuego.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4124,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/cohete_sn_fuego.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/cohete_sn_fuego.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/footer_tierra.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 101595,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/footer_tierra.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/footer_tierra.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/joteria_azul-1.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 21482,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joteria_azul-1.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joteria_azul-1.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/joterias_finales.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 355739,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joterias_finales.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joterias_finales.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 733,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.jpg",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1101,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/joterias_puntos_vertical.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1117,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joterias_puntos_vertical.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joterias_puntos_vertical.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/logo_fnl_digital_friday.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 53849,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/logo_fnl_digital_friday.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/logo_fnl_digital_friday.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/nube1.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 68598,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube1.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube1.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/nube2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 48866,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube2.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube2.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/nube3.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 37485,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube3.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube3.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/nube4.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 57104,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube4.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube4.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/nube_5.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 60196,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube_5.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube_5.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/scroll_flechas.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2499,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/scroll_flechas.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/scroll_flechas.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/scroll_mano.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2404,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/scroll_mano.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/scroll_mano.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Code\/templates\/img\/digital_friday\/sesion1.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 14396,
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/sesion1.png",
-		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/sesion1.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/Code\/templates\/index.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -578,15 +368,15 @@
 		"inputAbbreviatedPath": "\/Code\/templates\/index.jade",
 		"outputAbbreviatedPath": "\/index.html",
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/Code\/templates\/js\/main.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.js",
-		"outputAbbreviatedPath": "\/Code\/templates\/main.min.js",
-		"outputPathIsSetByUser": 0,
+		"outputAbbreviatedPath": "\/js\/main.min.js",
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -595,7 +385,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js",
-		"outputAbbreviatedPath": "\/Code\/templates\/main.min.min.js",
+		"outputAbbreviatedPath": "\/js\/main.min.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -605,7 +395,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/plugins.js",
-		"outputAbbreviatedPath": "\/Code\/templates\/plugins.min.js",
+		"outputAbbreviatedPath": "\/js\/plugins.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -615,7 +405,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/plugins.min.js",
-		"outputAbbreviatedPath": "\/Code\/templates\/plugins.min.min.js",
+		"outputAbbreviatedPath": "\/js\/plugins.min.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -625,7 +415,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/additional-methods.js",
-		"outputAbbreviatedPath": "\/Code\/templates\/js\/additional-methods.min.js",
+		"outputAbbreviatedPath": "\/Code\/js\/additional-methods.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -635,7 +425,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery-1.8.3.min.js",
-		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery-1.8.3.min.min.js",
+		"outputAbbreviatedPath": "\/Code\/js\/jquery-1.8.3.min.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -645,7 +435,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery-1.9.0.min.js",
-		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery-1.9.0.min.min.js",
+		"outputAbbreviatedPath": "\/Code\/js\/jquery-1.9.0.min.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -655,7 +445,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery.form.js",
-		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery.form.min.js",
+		"outputAbbreviatedPath": "\/Code\/js\/jquery.form.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -665,7 +455,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery.scrollTo-1.4.3.1-min.js",
-		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery.scrollTo-1.4.3.1-min.min.js",
+		"outputAbbreviatedPath": "\/Code\/js\/jquery.scrollTo-1.4.3.1-min.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -675,7 +465,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery.scrollTo-1.4.3.1.js",
-		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery.scrollTo-1.4.3.1.min.js",
+		"outputAbbreviatedPath": "\/Code\/js\/jquery.scrollTo-1.4.3.1.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -685,7 +475,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery.tools.custom.min.js",
-		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery.tools.custom.min.min.js",
+		"outputAbbreviatedPath": "\/Code\/js\/jquery.tools.custom.min.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -695,7 +485,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery.tools.min.js",
-		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery.tools.min.min.js",
+		"outputAbbreviatedPath": "\/Code\/js\/jquery.tools.min.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -705,7 +495,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery.uniform.js",
-		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery.uniform.min.js",
+		"outputAbbreviatedPath": "\/Code\/js\/jquery.uniform.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -715,7 +505,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery.validate.js",
-		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery.validate.min.js",
+		"outputAbbreviatedPath": "\/Code\/js\/jquery.validate.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -725,7 +515,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery.validate.min.js",
-		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery.validate.min.min.js",
+		"outputAbbreviatedPath": "\/Code\/js\/jquery.validate.min.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -735,7 +525,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/modernizr-2.6.2.min.js",
-		"outputAbbreviatedPath": "\/Code\/templates\/js\/modernizr-2.6.2.min.min.js",
+		"outputAbbreviatedPath": "\/Code\/js\/modernizr-2.6.2.min.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -745,7 +535,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/prefixfree.min.js",
-		"outputAbbreviatedPath": "\/Code\/templates\/js\/prefixfree.min.min.js",
+		"outputAbbreviatedPath": "\/Code\/js\/prefixfree.min.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -787,6 +577,244 @@
 		"outputAbbreviatedPath": "\/Code\/templates\/mailing\/imgs\/head.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/css\/main.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/main.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/img\/digital_friday\/barra_header.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 990,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/barra_header.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/barra_header.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/bg_degradado.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49555,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/bg_degradado.jpg",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/bg_degradado.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/check_in.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2125,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/check_in.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/check_in.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/cmv_header.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3781,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/cmv_header.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/cmv_header.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/cohete_1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10153,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/cohete_1.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/cohete_1.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/cohete_sn_fuego.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4124,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/cohete_sn_fuego.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/cohete_sn_fuego.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/footer_tierra.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 101595,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/footer_tierra.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/footer_tierra.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/joteria_azul-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21482,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/joteria_azul-1.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/joteria_azul-1.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/joterias_finales.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 355739,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/joterias_finales.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/joterias_finales.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/joterias_puntos_horizontal.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 733,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/joterias_puntos_horizontal.jpg",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/joterias_puntos_horizontal.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/joterias_puntos_horizontal.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1101,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/joterias_puntos_horizontal.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/joterias_puntos_horizontal.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/joterias_puntos_vertical.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1117,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/joterias_puntos_vertical.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/joterias_puntos_vertical.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/logo_fnl_digital_friday.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 53849,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/logo_fnl_digital_friday.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/logo_fnl_digital_friday.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/nube1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 68598,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/nube1.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/nube1.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/nube2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48866,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/nube2.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/nube2.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/nube3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37485,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/nube3.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/nube3.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/nube4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57104,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/nube4.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/nube4.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/nube_5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60196,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/nube_5.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/nube_5.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/scroll_flechas.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2499,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/scroll_flechas.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/scroll_flechas.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/scroll_mano.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2404,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/scroll_mano.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/scroll_mano.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/digital_friday\/sesion1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14396,
+		"inputAbbreviatedPath": "\/img\/digital_friday\/sesion1.png",
+		"outputAbbreviatedPath": "\/img\/digital_friday\/sesion1.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/js\/main.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/main.min.js",
+		"outputAbbreviatedPath": "\/js\/main.min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/plugins.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/plugins.min.js",
+		"outputAbbreviatedPath": "\/js\/plugins.min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/mailing\/mail1\/digital_friday.html": {
 		"fileType": 8192,
@@ -969,7 +997,7 @@
 	"jadeAutoOutputPathStyle": 2,
 	"jadeCompileDebug": 1,
 	"jadeOutputStyle": 0,
-	"javascriptAutoOutputPathRelativePath": "..\/",
+	"javascriptAutoOutputPathRelativePath": "..\/..\/..\/js\/",
 	"javascriptAutoOutputPathReplace1": "",
 	"javascriptAutoOutputPathReplace2": "",
 	"javascriptAutoOutputPathStyle": 2,
@@ -1395,7 +1423,7 @@
 	"markdownEnableSmartyPants": 1,
 	"markdownExpandTabs": 1,
 	"reloadFileURLs": 1,
-	"sassAutoOutputPathRelativePath": "..\/",
+	"sassAutoOutputPathRelativePath": "..\/..\/..\/..\/css\/",
 	"sassAutoOutputPathReplace1": "sass",
 	"sassAutoOutputPathReplace2": "css",
 	"sassAutoOutputPathStyle": 2,
