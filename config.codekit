@@ -1,1300 +1,1581 @@
 {
-  "CodeKitInfo" : "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-  "settingsFileVersion" : "2",
-  "projectSettings" : {
-    "externalServerAddress" : "http:\/\/localhost:80\/CMV\/Digital_Friday\/",
-    "autoprefixerBrowserString" : "> 1%, last 2 versions, ff 17, opera 12.1",
-    "uglifyFlags2" : {
-      "drop_debugger" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "booleans" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "bracketize" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "inline-script" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "hoist_vars" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "loops" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "toplevel" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "mangle" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "sequences" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "comments" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "space-colon" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "sort" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "cascade" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "unused" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "dead_code" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "indent-start" : {
-        "flagValue" : 0,
-        "active" : 0
-      },
-      "compress" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "conditionals" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "ascii-only" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "evaluate" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "comparisons" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "quote-keys" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "warnings" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "join_vars" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "properties" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "screw-ie8" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "indent-level" : {
-        "flagValue" : 4,
-        "active" : 0
-      },
-      "if_return" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "unsafe" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "max-line-len" : {
-        "flagValue" : 32000,
-        "active" : 1
-      },
-      "eval" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "hoist_funs" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "width" : {
-        "flagValue" : 80,
-        "active" : 1
-      },
-      "semicolons" : {
-        "flagValue" : -1,
-        "active" : 1
-      }
-    },
-    "coffeeAutoOutputPathStyle" : 2,
-    "javascriptCreateSourceMap" : 1,
-    "javascriptOutputSuffix" : ".min",
-    "typescriptDisallowBool" : 0,
-    "jsLintFlags2" : {
-      "white" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "unparam" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "sloppy" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "regexp" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "sub" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "vars" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "stupid" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "bitwise" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "continue" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "newcap" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "nomen" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "maxlen" : {
-        "flagValue" : 150,
-        "active" : 0
-      },
-      "closure" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "browser" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "properties" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "forin" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "plusplus" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "debug" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "eqeq" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "evil" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "node" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "rhino" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "ass" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "devel" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "indent" : {
-        "flagValue" : 4,
-        "active" : 0
-      }
-    },
-    "hamlOutputFormat" : 2,
-    "slimAutoOutputPathStyle" : 0,
-    "kitAutoOutputPathReplace1" : "",
-    "kitAutoOutputPathReplace2" : "",
-    "lessDisableJavascript" : 0,
-    "jadeCompileDebug" : 1,
-    "markdownAutoOutputPathRelativePath" : "",
-    "reloadFileURLs" : 1,
-    "stylusImportCSS" : 0,
-    "sassUseLibsass" : 0,
-    "coffeeLintFlags2" : {
-      "no_tabs" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "no_empty_param_list" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "no_stand_alone_at" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "no_trailing_whitespace" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "no_backticks" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "no_implicit_parens" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "empty_constructor_needs_parens" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "max_line_length" : {
-        "flagValue" : 150,
-        "active" : 0
-      },
-      "no_implicit_braces" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "no_throwing_strings" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "arrow_spacing" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "camel_case_classes" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "duplicate_key" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "line_endings" : {
-        "flagValue" : 0,
-        "active" : 0
-      },
-      "cyclomatic_complexity" : {
-        "flagValue" : 10,
-        "active" : 0
-      },
-      "space_operators" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "newlines_after_classes" : {
-        "flagValue" : 3,
-        "active" : 0
-      },
-      "non_empty_constructor_needs_parens" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "no_plusplus" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "indentation" : {
-        "flagValue" : 2,
-        "active" : 1
-      },
-      "no_trailing_semicolons" : {
-        "flagValue" : -1,
-        "active" : 1
-      }
-    },
-    "kitAutoOutputPathRelativePath" : "",
-    "coffeeCreateSourceMap" : 0,
-    "markdownAutoOutputPathReplace2" : "",
-    "markdownAutoOutputPathStyle" : 0,
-    "lessAutoOutputPathReplace2" : "css",
-    "lessAutoOutputPathReplace1" : "less",
-    "stylusResolveRelativeURLS" : 0,
-    "hamlUseCDATA" : 0,
-    "hamlUseUnixNewlines" : 0,
-    "typescriptCreateSourceMap" : 0,
-    "typescriptAutoOutputPathRelativePath" : "\/js",
-    "typescriptMinifyOutput" : 0,
-    "hamlOutputStyle" : 0,
-    "hamlNoEscapeInAttributes" : 0,
-    "typescriptEmitComments" : 0,
-    "sassCreateSourceMap" : 0,
-    "typescriptModuleType" : 0,
-    "coffeeAutoOutputPathReplace2" : "",
-    "typescriptAutoOutputPathStyle" : 2,
-    "hamlAutoOutputPathStyle" : 0,
-    "hamlAutoOutputPathReplace1" : "",
-    "hamlAutoOutputPathReplace2" : "",
-    "slimAutoOutputPathRelativePath" : "",
-    "markdownAutoOutputPathReplace1" : "",
-    "coffeeAutoOutputPathReplace1" : "",
-    "jadeOutputStyle" : 0,
-    "stylusDebugStyle" : 0,
-    "uglifyReservedNamesString" : "$",
-    "typescriptDisallowImportModule" : 0,
-    "lessOutputStyle" : 0,
-    "stylusAutoOutputPathReplace2" : "css",
-    "sassDebugStyle" : 0,
-    "stylusAutoOutputPathReplace1" : "stylus",
-    "sassOutputStyle" : 0,
-    "slimLogicless" : 0,
-    "lessIeCompatibility" : 1,
-    "typescriptTargetECMAVersion" : 0,
-    "slimOutputStyle" : 1,
-    "jadeAutoOutputPathReplace2" : "",
-    "jadeAutoOutputPathReplace1" : "",
-    "kitAutoOutputPathStyle" : 0,
-    "animateCSSInjections" : 1,
-    "sassDecimalPrecision" : 2,
-    "skippedItemsString" : ".svn, .git, .hg, log",
-    "genericWebpageFileExtensionsString" : "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
-    "coffeeSyntaxCheckerStyle" : 1,
-    "stylusAutoOutputPathStyle" : 2,
-    "hamlAutoOutputPathRelativePath" : "",
-    "slimCompileOnly" : 0,
-    "alwaysUseExternalServer" : 1,
-    "lessStrictUnits" : 0,
-    "coffeeMinifyOutput" : 1,
-    "jadeAutoOutputPathStyle" : 2,
-    "stylusOutputStyle" : 0,
-    "javascriptOutputStyle" : 1,
-    "lessCreateSourceMap" : 0,
-    "slimRailsCompatible" : 0,
-    "externalServerPreviewPathAddition" : "Code\/templates\/",
-    "sassAutoOutputPathStyle" : 2,
-    "sassAutoOutputPathRelativePath" : "..\/",
-    "lessStrictImports" : 0,
-    "lessStrictMath" : 0,
-    "jsHintFlags2" : {
-      "latedef" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "newcap" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "curly" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "trailing" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "nonew" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "es3" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "freeze" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "maxlen" : {
-        "flagValue" : 150,
-        "active" : 0
-      },
-      "mootools" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "yui" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "proto" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "boss" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "funcscope" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "esnext" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "jquery" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "maxstatements" : {
-        "flagValue" : 4,
-        "active" : 0
-      },
-      "camelcase" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "dojo" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "strict" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "maxparams" : {
-        "flagValue" : 3,
-        "active" : 0
-      },
-      "devel" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "onecase" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "wsh" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "nonstandard" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "asi" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "moz" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "noempty" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "smarttabs" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "lastsemic" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "rhino" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "maxcomplexity" : {
-        "flagValue" : 10,
-        "active" : 0
-      },
-      "eqnull" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "eqeqeq" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "couch" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "evil" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "expr" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "immed" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "globalstrict" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "undef" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "iterator" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "prototypejs" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "noarg" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "supernew" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "node" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "unused" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "debug" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "bitwise" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "notypeof" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "white" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "browser" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "maxdepth" : {
-        "flagValue" : 3,
-        "active" : 0
-      },
-      "worker" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "laxcomma" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "multistr" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "sub" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "shadow" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "regexp" : {
-        "flagValue" : -1,
-        "active" : 1
-      },
-      "scripturl" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "forin" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "loopfunc" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "laxbreak" : {
-        "flagValue" : -1,
-        "active" : 0
-      },
-      "indent" : {
-        "flagValue" : 4,
-        "active" : 0
-      },
-      "plusplus" : {
-        "flagValue" : -1,
-        "active" : 0
-      }
-    },
-    "coffeeOutputStyle" : 0,
-    "autoApplyPSLanguageSettingsStyle" : 0,
-    "jsCheckerReservedNamesString" : "jQuery,$,_,CMVDG",
-    "lessAutoOutputPathRelativePath" : "..\/css",
-    "stylusAutoOutputPathRelativePath" : "..\/css",
-    "javascriptAutoOutputPathRelativePath" : "..\/",
-    "javascriptSyntaxCheckerStyle" : 1,
-    "javascriptAutoOutputPathReplace1" : "",
-    "javascriptAutoOutputPathReplace2" : "",
-    "websiteRelativeRoot" : "",
-    "coffeeAutoOutputPathRelativePath" : "",
-    "typescriptCreateDeclarationFile" : 0,
-    "hamlUseDoubleQuotes" : 0,
-    "lessAllowInsecureImports" : 0,
-    "slimAutoOutputPathReplace1" : "",
-    "slimAutoOutputPathReplace2" : "",
-    "markdownExpandTabs" : 1,
-    "typescriptAutoOutputPathReplace1" : "",
-    "browserRefreshDelay" : 0,
-    "typescriptAutoOutputPathReplace2" : "",
-    "autoSyncProjectSettingsFile" : 1,
-    "javascriptAutoOutputPathStyle" : 2,
-    "lessAutoOutputPathStyle" : 2,
-    "shouldRunBless" : 0,
-    "markdownEnableFootnotes" : 0,
-    "sassAutoOutputPathReplace2" : "css",
-    "sassAutoOutputPathReplace1" : "sass",
-    "jadeAutoOutputPathRelativePath" : "..\/",
-    "shouldRunAutoprefixer" : 1,
-    "uglifyDefinesString" : "",
-    "markdownEnableSmartyPants" : 1,
-    "lessRelativeURLS" : 0,
-    "hamlEscapeHTMLCharacters" : 0
-  },
-  "lastSavedByUser" : "Jesús García Valadez",
-  "creatorBuild" : "16377",
-  "manualImportLinks" : {
-
-  },
-  "projectAttributes" : {
-    "displayValueWasSetByUser" : 1,
-    "displayValue" : "Digital Friday",
-    "bowerAbbreviatedPath" : "",
-    "iconImageName" : "meme-ceiling"
-  },
-  "hooks" : [
-
-  ],
-  "files" : {
-    "\/Code\/templates\/img\/digital_friday\/cohete_sn_fuego.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/cohete_sn_fuego.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/cohete_sn_fuego.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 4124,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/img\/digital_friday\/nube3.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/nube3.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/nube3.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 37485,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/js\/vendor\/prefixfree.min.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Code\/templates\/js\/vendor\/prefixfree.min.js",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/js\/prefixfree.min.min.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/Code\/templates\/js\/vendor\/jquery.form.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Code\/templates\/js\/vendor\/jquery.form.js",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/js\/jquery.form.min.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/Code\/templates\/js\/vendor\/jquery.tools.custom.min.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Code\/templates\/js\/vendor\/jquery.tools.custom.min.js",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/js\/jquery.tools.custom.min.min.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/Code\/templates\/img\/digital_friday\/bg_degradado.jpg" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/bg_degradado.jpg",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/bg_degradado.jpg",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 49555,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16384
-    },
-    "\/Code\/templates\/js\/vendor\/jquery.validate.min.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Code\/templates\/js\/vendor\/jquery.validate.min.js",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/js\/jquery.validate.min.min.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/mailing\/mail1\/imgs\/button.jpg" : {
-      "inputAbbreviatedPath" : "\/mailing\/mail1\/imgs\/button.jpg",
-      "outputAbbreviatedPath" : "\/mailing\/mail1\/imgs\/button.jpg",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 0,
-      "ignore" : 0,
-      "initialSize" : 33889,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16384
-    },
-    "\/Code\/templates\/img\/digital_friday\/nube2.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/nube2.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/nube2.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 48866,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/js\/main.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Code\/templates\/js\/main.js",
-      "outputAbbreviatedPath" : "\/Code\/templates\/js\/main.min.js",
-      "outputPathIsSetByUser" : 1,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 2
-    },
-    "\/Code\/templates\/js\/vendor\/additional-methods.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Code\/templates\/js\/vendor\/additional-methods.js",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/js\/additional-methods.min.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/apple-touch-icon-114x114-precomposed.png" : {
-      "inputAbbreviatedPath" : "\/apple-touch-icon-114x114-precomposed.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/apple-touch-icon-114x114-precomposed.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 1189,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/js\/plugins.min.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Code\/templates\/js\/plugins.min.js",
-      "outputAbbreviatedPath" : "\/Code\/templates\/plugins.min.min.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/Code\/templates\/img\/digital_friday\/nube1.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/nube1.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/nube1.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 68598,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/mailing\/mail1\/imgs\/head.jpg" : {
-      "inputAbbreviatedPath" : "\/mailing\/mail1\/imgs\/head.jpg",
-      "outputAbbreviatedPath" : "\/mailing\/mail1\/imgs\/head.jpg",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 0,
-      "ignore" : 0,
-      "initialSize" : 79120,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16384
-    },
-    "\/Code\/templates\/css\/sass\/normalize.min.scss" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/css\/sass\/normalize.min.scss",
-      "outputAbbreviatedPath" : "\/Code\/templates\/css\/normalize.min.css",
-      "outputPathIsSetByUser" : 0,
-      "shouldRunAutoprefixer" : 0,
-      "ignore" : 1,
-      "createSourceMap" : 0,
-      "decimalPrecision" : 2,
-      "ignoreWasSetByUser" : 0,
-      "debugStyle" : 0,
-      "fileType" : 4,
-      "shouldRunBless" : 0,
-      "outputStyle" : 0,
-      "useLibsass" : 0
-    },
-    "\/apple-touch-icon-72x72-precomposed.png" : {
-      "inputAbbreviatedPath" : "\/apple-touch-icon-72x72-precomposed.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/apple-touch-icon-72x72-precomposed.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 854,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/img\/digital_friday\/barra_header.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/barra_header.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/barra_header.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 990,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/img\/digital_friday\/logo_fnl_digital_friday.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/logo_fnl_digital_friday.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/logo_fnl_digital_friday.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 53849,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/mailing\/mail1\/imgs\/footer.jpg" : {
-      "inputAbbreviatedPath" : "\/mailing\/mail1\/imgs\/footer.jpg",
-      "outputAbbreviatedPath" : "\/mailing\/mail1\/imgs\/footer.jpg",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 0,
-      "ignore" : 0,
-      "initialSize" : 80826,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16384
-    },
-    "\/Code\/templates\/js\/vendor\/jquery-1.8.3.min.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Code\/templates\/js\/vendor\/jquery-1.8.3.min.js",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/js\/jquery-1.8.3.min.min.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/Code\/templates\/img\/digital_friday\/scroll_flechas.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/scroll_flechas.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/scroll_flechas.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 2499,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/css\/main.css" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/css\/main.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16
-    },
-    "\/Code\/templates\/img\/digital_friday\/sesion1.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/sesion1.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/sesion1.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 14396,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/mailing\/imgs\/head.jpg" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/mailing\/imgs\/head.jpg",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/mailing\/imgs\/head.jpg",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 0,
-      "ignore" : 0,
-      "initialSize" : 57490,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16384
-    },
-    "\/Code\/templates\/img\/digital_friday\/joterias_puntos_vertical.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/joterias_puntos_vertical.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/joterias_puntos_vertical.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 1117,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/js\/vendor\/jquery.uniform.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Code\/templates\/js\/vendor\/jquery.uniform.js",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/js\/jquery.uniform.min.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/mailing\/mail1\/imgs\/body.jpg" : {
-      "inputAbbreviatedPath" : "\/mailing\/mail1\/imgs\/body.jpg",
-      "outputAbbreviatedPath" : "\/mailing\/mail1\/imgs\/body.jpg",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 0,
-      "ignore" : 0,
-      "initialSize" : 106156,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16384
-    },
-    "\/Code\/templates\/js\/main.min.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Code\/templates\/js\/main.min.js",
-      "outputAbbreviatedPath" : "\/Code\/templates\/main.min.min.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/Code\/templates\/img\/digital_friday\/joteria_azul-1.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/joteria_azul-1.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/joteria_azul-1.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 21482,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/js\/vendor\/jquery.scrollTo-1.4.3.1-min.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Code\/templates\/js\/vendor\/jquery.scrollTo-1.4.3.1-min.js",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/js\/jquery.scrollTo-1.4.3.1-min.min.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/apple-touch-icon-144x144-precomposed.png" : {
-      "inputAbbreviatedPath" : "\/apple-touch-icon-144x144-precomposed.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/apple-touch-icon-144x144-precomposed.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 1475,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/img\/digital_friday\/cohete_1.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/cohete_1.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/cohete_1.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 10153,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/index.html" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/Code\/templates\/img\/digital_friday\/nube_5.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/nube_5.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/nube_5.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 60196,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/js\/vendor\/jquery-1.9.0.min.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Code\/templates\/js\/vendor\/jquery-1.9.0.min.js",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/js\/jquery-1.9.0.min.min.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/Code\/templates\/js\/vendor\/jquery.validate.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Code\/templates\/js\/vendor\/jquery.validate.js",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/js\/jquery.validate.min.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/apple-touch-icon-precomposed.png" : {
-      "inputAbbreviatedPath" : "\/apple-touch-icon-precomposed.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/apple-touch-icon-precomposed.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 730,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/css\/sass\/home.scss" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/css\/sass\/home.scss",
-      "outputAbbreviatedPath" : "\/Code\/templates\/css\/home.css",
-      "outputPathIsSetByUser" : 0,
-      "shouldRunAutoprefixer" : 0,
-      "ignore" : 1,
-      "createSourceMap" : 0,
-      "decimalPrecision" : 2,
-      "ignoreWasSetByUser" : 0,
-      "debugStyle" : 0,
-      "fileType" : 4,
-      "shouldRunBless" : 0,
-      "outputStyle" : 0,
-      "useLibsass" : 0
-    },
-    "\/Code\/templates\/img\/digital_friday\/check_in.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/check_in.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/check_in.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 2125,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.jpg" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.jpg",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.jpg",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 733,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16384
-    },
-    "\/Code\/templates\/js\/plugins.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Code\/templates\/js\/plugins.js",
-      "outputAbbreviatedPath" : "\/Code\/templates\/js\/plugins.min.js",
-      "outputPathIsSetByUser" : 1,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 2
-    },
-    "\/mailing\/mail1\/digital_friday.html" : {
-      "inputAbbreviatedPath" : "\/mailing\/mail1\/digital_friday.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/Code\/templates\/css\/sass\/main.scss" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/css\/sass\/main.scss",
-      "outputAbbreviatedPath" : "\/Code\/templates\/css\/main.css",
-      "outputPathIsSetByUser" : 0,
-      "shouldRunAutoprefixer" : 1,
-      "ignore" : 0,
-      "createSourceMap" : 1,
-      "decimalPrecision" : 2,
-      "ignoreWasSetByUser" : 0,
-      "debugStyle" : 0,
-      "fileType" : 4,
-      "shouldRunBless" : 0,
-      "outputStyle" : 0,
-      "useLibsass" : 0
-    },
-    "\/Code\/templates\/img\/digital_friday\/scroll_mano.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/scroll_mano.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/scroll_mano.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 2404,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/js\/vendor\/modernizr-2.6.2.min.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Code\/templates\/js\/vendor\/modernizr-2.6.2.min.js",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/js\/modernizr-2.6.2.min.min.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/Code\/templates\/mailing\/digital_friday.html" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/mailing\/digital_friday.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/Code\/templates\/img\/digital_friday\/cmv_header.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/cmv_header.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/cmv_header.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 3781,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/js\/vendor\/jquery.scrollTo-1.4.3.1.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Code\/templates\/js\/vendor\/jquery.scrollTo-1.4.3.1.js",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/js\/jquery.scrollTo-1.4.3.1.min.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/Code\/templates\/js\/vendor\/jquery.tools.min.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Code\/templates\/js\/vendor\/jquery.tools.min.js",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/js\/jquery.tools.min.min.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/Code\/templates\/mailing\/imgs\/footer.jpg" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/mailing\/imgs\/footer.jpg",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/mailing\/imgs\/footer.jpg",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 0,
-      "ignore" : 0,
-      "initialSize" : 64594,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16384
-    },
-    "\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 1101,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/img\/digital_friday\/nube4.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/nube4.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/nube4.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 57104,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/mailing\/imgs\/button.jpg" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/mailing\/imgs\/button.jpg",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/mailing\/imgs\/button.jpg",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 0,
-      "ignore" : 0,
-      "initialSize" : 14345,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16384
-    },
-    "\/Code\/templates\/img\/digital_friday\/footer_tierra.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/footer_tierra.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/footer_tierra.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 101595,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Code\/templates\/img\/digital_friday\/joterias_finales.png" : {
-      "inputAbbreviatedPath" : "\/Code\/templates\/img\/digital_friday\/joterias_finales.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/joterias_finales.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 355739,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/apple-touch-icon-57x57-precomposed.png" : {
-      "inputAbbreviatedPath" : "\/apple-touch-icon-57x57-precomposed.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/apple-touch-icon-57x57-precomposed.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 730,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/apple-touch-icon.png" : {
-      "inputAbbreviatedPath" : "\/apple-touch-icon.png",
-      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/apple-touch-icon.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 1,
-      "ignore" : 0,
-      "initialSize" : 730,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    }
-  }
+"CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
+"creatorBuild": "16653",
+"files": {
+	"\/apple-touch-icon-114x114-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1189,
+		"inputAbbreviatedPath": "\/apple-touch-icon-114x114-precomposed.png",
+		"outputAbbreviatedPath": "\/apple-touch-icon-114x114-precomposed.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/apple-touch-icon-144x144-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1475,
+		"inputAbbreviatedPath": "\/apple-touch-icon-144x144-precomposed.png",
+		"outputAbbreviatedPath": "\/apple-touch-icon-144x144-precomposed.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/apple-touch-icon-57x57-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 730,
+		"inputAbbreviatedPath": "\/apple-touch-icon-57x57-precomposed.png",
+		"outputAbbreviatedPath": "\/apple-touch-icon-57x57-precomposed.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/apple-touch-icon-72x72-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 854,
+		"inputAbbreviatedPath": "\/apple-touch-icon-72x72-precomposed.png",
+		"outputAbbreviatedPath": "\/apple-touch-icon-72x72-precomposed.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/apple-touch-icon-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 730,
+		"inputAbbreviatedPath": "\/apple-touch-icon-precomposed.png",
+		"outputAbbreviatedPath": "\/apple-touch-icon-precomposed.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/apple-touch-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 730,
+		"inputAbbreviatedPath": "\/apple-touch-icon.png",
+		"outputAbbreviatedPath": "\/apple-touch-icon.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/html5-boilerplate\/404.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/404.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/html5-boilerplate\/apple-touch-icon-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1226,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/apple-touch-icon-precomposed.png",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/apple-touch-icon-precomposed.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/html5-boilerplate\/CHANGELOG.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/CHANGELOG.md",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/CHANGELOG.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/html5-boilerplate\/CONTRIBUTING.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/CONTRIBUTING.md",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/CONTRIBUTING.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/html5-boilerplate\/css\/main.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/css\/main.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/html5-boilerplate\/css\/normalize.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/css\/normalize.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/html5-boilerplate\/doc\/crossdomain.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/crossdomain.md",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/crossdomain.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/html5-boilerplate\/doc\/css.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/css.md",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/css.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/html5-boilerplate\/doc\/extend.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/extend.md",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/extend.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/html5-boilerplate\/doc\/faq.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/faq.md",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/faq.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/html5-boilerplate\/doc\/html.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/html.md",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/html.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/html5-boilerplate\/doc\/js.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/js.md",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/js.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/html5-boilerplate\/doc\/misc.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/misc.md",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/misc.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/html5-boilerplate\/doc\/TOC.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/TOC.md",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/TOC.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/html5-boilerplate\/doc\/usage.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/usage.md",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/doc\/usage.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/html5-boilerplate\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/html5-boilerplate\/js\/main.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/main.js",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/main.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/html5-boilerplate\/js\/plugins.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/plugins.js",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/plugins.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/html5-boilerplate\/js\/vendor\/jquery-1.10.2.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/vendor\/jquery-1.10.2.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/jquery-1.10.2.min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/html5-boilerplate\/js\/vendor\/modernizr-2.6.2.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/vendor\/modernizr-2.6.2.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/modernizr-2.6.2.min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/html5-boilerplate\/LICENSE.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/LICENSE.md",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/LICENSE.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/html5-boilerplate\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/README.md",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/README.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/css\/main.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/css\/main.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/css\/sass\/home.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 2,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/css\/sass\/home.scss",
+		"outputAbbreviatedPath": "\/Code\/templates\/css\/home.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/Code\/templates\/css\/sass\/main.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 2,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/css\/sass\/main.scss",
+		"outputAbbreviatedPath": "\/Code\/templates\/css\/main.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/Code\/templates\/css\/sass\/normalize.min.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 2,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/css\/sass\/normalize.min.scss",
+		"outputAbbreviatedPath": "\/Code\/templates\/css\/normalize.min.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/Code\/templates\/footer.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/footer.jade",
+		"outputAbbreviatedPath": "\/footer.html",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/Code\/templates\/head.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/head.jade",
+		"outputAbbreviatedPath": "\/head.html",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/barra_header.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 990,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/barra_header.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/barra_header.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/bg_degradado.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49555,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/bg_degradado.jpg",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/bg_degradado.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/check_in.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2125,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/check_in.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/check_in.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/cmv_header.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3781,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/cmv_header.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/cmv_header.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/cohete_1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10153,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/cohete_1.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/cohete_1.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/cohete_sn_fuego.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4124,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/cohete_sn_fuego.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/cohete_sn_fuego.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/footer_tierra.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 101595,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/footer_tierra.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/footer_tierra.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/joteria_azul-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21482,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joteria_azul-1.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joteria_azul-1.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/joterias_finales.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 355739,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joterias_finales.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joterias_finales.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 733,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.jpg",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1101,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joterias_puntos_horizontal.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/joterias_puntos_vertical.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1117,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joterias_puntos_vertical.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/joterias_puntos_vertical.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/logo_fnl_digital_friday.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 53849,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/logo_fnl_digital_friday.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/logo_fnl_digital_friday.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/nube1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 68598,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube1.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube1.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/nube2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48866,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube2.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube2.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/nube3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37485,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube3.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube3.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/nube4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57104,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube4.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube4.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/nube_5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60196,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube_5.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube_5.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/scroll_flechas.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2499,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/scroll_flechas.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/scroll_flechas.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/scroll_mano.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2404,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/scroll_mano.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/scroll_mano.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/img\/digital_friday\/sesion1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14396,
+		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/sesion1.png",
+		"outputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/sesion1.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/index.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/index.jade",
+		"outputAbbreviatedPath": "\/index.html",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/Code\/templates\/js\/main.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/main.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/main.min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/plugins.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/plugins.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/plugins.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/plugins.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/plugins.min.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/plugins.min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/vendor\/additional-methods.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/additional-methods.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/additional-methods.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/vendor\/jquery-1.8.3.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery-1.8.3.min.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery-1.8.3.min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/vendor\/jquery-1.9.0.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery-1.9.0.min.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery-1.9.0.min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/vendor\/jquery.form.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery.form.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery.form.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/vendor\/jquery.scrollTo-1.4.3.1-min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery.scrollTo-1.4.3.1-min.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery.scrollTo-1.4.3.1-min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/vendor\/jquery.scrollTo-1.4.3.1.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery.scrollTo-1.4.3.1.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery.scrollTo-1.4.3.1.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/vendor\/jquery.tools.custom.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery.tools.custom.min.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery.tools.custom.min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/vendor\/jquery.tools.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery.tools.min.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery.tools.min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/vendor\/jquery.uniform.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery.uniform.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery.uniform.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/vendor\/jquery.validate.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery.validate.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery.validate.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/vendor\/jquery.validate.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/jquery.validate.min.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/jquery.validate.min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/vendor\/modernizr-2.6.2.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/modernizr-2.6.2.min.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/modernizr-2.6.2.min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/vendor\/prefixfree.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/vendor\/prefixfree.min.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/prefixfree.min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/mailing\/digital_friday.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/mailing\/digital_friday.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/mailing\/imgs\/button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14345,
+		"inputAbbreviatedPath": "\/Code\/templates\/mailing\/imgs\/button.jpg",
+		"outputAbbreviatedPath": "\/Code\/templates\/mailing\/imgs\/button.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/mailing\/imgs\/footer.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 64594,
+		"inputAbbreviatedPath": "\/Code\/templates\/mailing\/imgs\/footer.jpg",
+		"outputAbbreviatedPath": "\/Code\/templates\/mailing\/imgs\/footer.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Code\/templates\/mailing\/imgs\/head.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57490,
+		"inputAbbreviatedPath": "\/Code\/templates\/mailing\/imgs\/head.jpg",
+		"outputAbbreviatedPath": "\/Code\/templates\/mailing\/imgs\/head.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/mailing\/mail1\/digital_friday.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mailing\/mail1\/digital_friday.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/mailing\/mail1\/imgs\/body.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 72256,
+		"inputAbbreviatedPath": "\/mailing\/mail1\/imgs\/body.jpg",
+		"outputAbbreviatedPath": "\/mailing\/mail1\/imgs\/body.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/mailing\/mail1\/imgs\/button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17674,
+		"inputAbbreviatedPath": "\/mailing\/mail1\/imgs\/button.jpg",
+		"outputAbbreviatedPath": "\/mailing\/mail1\/imgs\/button.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/mailing\/mail1\/imgs\/footer.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49847,
+		"inputAbbreviatedPath": "\/mailing\/mail1\/imgs\/footer.jpg",
+		"outputAbbreviatedPath": "\/mailing\/mail1\/imgs\/footer.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/mailing\/mail1\/imgs\/head.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49201,
+		"inputAbbreviatedPath": "\/mailing\/mail1\/imgs\/head.jpg",
+		"outputAbbreviatedPath": "\/mailing\/mail1\/imgs\/head.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		}
+	},
+"hooks": [
+	],
+"lastSavedByUser": "Jesús García Valadez",
+"manualImportLinks": {
+	},
+"projectAttributes": {
+	"bowerAbbreviatedPath": "",
+	"displayValue": "Digital Friday",
+	"displayValueWasSetByUser": 1,
+	"iconImageName": "meme-ceiling"
+	},
+"projectSettings": {
+	"alwaysUseExternalServer": 1,
+	"animateCSSInjections": 1,
+	"autoApplyPSLanguageSettingsStyle": 0,
+	"autoprefixerBrowserString": "> 1%, last 2 versions, ff 17, opera 12.1",
+	"autoSyncProjectSettingsFile": 1,
+	"browserRefreshDelay": 0,
+	"coffeeAutoOutputPathRelativePath": "..\/",
+	"coffeeAutoOutputPathReplace1": "",
+	"coffeeAutoOutputPathReplace2": "",
+	"coffeeAutoOutputPathStyle": 2,
+	"coffeeCreateSourceMap": 1,
+	"coffeeLintFlags2": {
+		"arrow_spacing": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camel_case_classes": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"cyclomatic_complexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"duplicate_key": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"indentation": {
+			"active": 1,
+			"flagValue": 2
+			},
+		"line_endings": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"max_line_length": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"newlines_after_classes": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"no_backticks": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_empty_param_list": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_implicit_braces": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_implicit_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_stand_alone_at": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_tabs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_throwing_strings": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_whitespace": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"non_empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space_operators": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"coffeeMinifyOutput": 1,
+	"coffeeOutputStyle": 0,
+	"coffeeSyntaxCheckerStyle": 1,
+	"externalServerAddress": "http:\/\/localhost:80\/CMV\/Digital_Friday\/",
+	"externalServerPreviewPathAddition": "",
+	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
+	"hamlAutoOutputPathRelativePath": "",
+	"hamlAutoOutputPathReplace1": "",
+	"hamlAutoOutputPathReplace2": "",
+	"hamlAutoOutputPathStyle": 0,
+	"hamlEscapeHTMLCharacters": 0,
+	"hamlNoEscapeInAttributes": 0,
+	"hamlOutputFormat": 2,
+	"hamlOutputStyle": 0,
+	"hamlUseCDATA": 0,
+	"hamlUseDoubleQuotes": 0,
+	"hamlUseUnixNewlines": 0,
+	"jadeAutoOutputPathRelativePath": "..\/..\/",
+	"jadeAutoOutputPathReplace1": "",
+	"jadeAutoOutputPathReplace2": "",
+	"jadeAutoOutputPathStyle": 2,
+	"jadeCompileDebug": 1,
+	"jadeOutputStyle": 0,
+	"javascriptAutoOutputPathRelativePath": "..\/",
+	"javascriptAutoOutputPathReplace1": "",
+	"javascriptAutoOutputPathReplace2": "",
+	"javascriptAutoOutputPathStyle": 2,
+	"javascriptCreateSourceMap": 1,
+	"javascriptOutputStyle": 1,
+	"javascriptOutputSuffix": ".min",
+	"javascriptSyntaxCheckerStyle": 1,
+	"jsCheckerReservedNamesString": "jQuery,$,_,CMVDG,_CMVDG,console,_console",
+	"jsHintFlags2": {
+		"asi": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bitwise": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"boss": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"camelcase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"curly": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"debug": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"dojo": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"eqeqeq": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqnull": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es3": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"esnext": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evil": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"expr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"forin": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"freeze": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"funcscope": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"gcl": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"globalstrict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"immed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"indent": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"iterator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jquery": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"lastsemic": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"latedef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"laxbreak": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"laxcomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loopfunc": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxcomplexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"maxdepth": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"maxparams": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxstatements": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"mootools": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"moz": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"multistr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newcap": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noarg": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"noempty": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonbsp": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonew": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nonstandard": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"notypeof": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noyield": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"onecase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"onevar": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"phantom": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"proto": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prototypejs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"regexp": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"rhino": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"scripturl": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shadow": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shelljs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"smarttabs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"strict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"sub": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"supernew": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"trailing": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"typed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"undef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"white": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"withstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"worker": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"wsh": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"yui": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"jsLintFlags2": {
+		"ass": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bitwise": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"closure": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"continue": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"debug": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"eqeq": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evil": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"forin": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"indent": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"newcap": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nomen": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"properties": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"regexp": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"rhino": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"sloppy": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"stupid": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"sub": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"todo": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unparam": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"vars": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"white": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"kitAutoOutputPathRelativePath": "",
+	"kitAutoOutputPathReplace1": "",
+	"kitAutoOutputPathReplace2": "",
+	"kitAutoOutputPathStyle": 0,
+	"lessAllowInsecureImports": 0,
+	"lessAutoOutputPathRelativePath": "..\/css",
+	"lessAutoOutputPathReplace1": "less",
+	"lessAutoOutputPathReplace2": "css",
+	"lessAutoOutputPathStyle": 2,
+	"lessCreateSourceMap": 0,
+	"lessDisableJavascript": 0,
+	"lessIeCompatibility": 1,
+	"lessOutputStyle": 0,
+	"lessRelativeURLS": 0,
+	"lessStrictImports": 0,
+	"lessStrictMath": 0,
+	"lessStrictUnits": 0,
+	"markdownAutoOutputPathRelativePath": "",
+	"markdownAutoOutputPathReplace1": "",
+	"markdownAutoOutputPathReplace2": "",
+	"markdownAutoOutputPathStyle": 0,
+	"markdownEnableFootnotes": 0,
+	"markdownEnableSmartyPants": 1,
+	"markdownExpandTabs": 1,
+	"reloadFileURLs": 1,
+	"sassAutoOutputPathRelativePath": "..\/",
+	"sassAutoOutputPathReplace1": "sass",
+	"sassAutoOutputPathReplace2": "css",
+	"sassAutoOutputPathStyle": 2,
+	"sassCreateSourceMap": 1,
+	"sassDebugStyle": 0,
+	"sassDecimalPrecision": 2,
+	"sassOutputStyle": 3,
+	"sassUseLibsass": 0,
+	"shouldRunAutoprefixer": 1,
+	"shouldRunBless": 0,
+	"skippedItemsString": ".svn, .git, .hg, log",
+	"slimAutoOutputPathRelativePath": "",
+	"slimAutoOutputPathReplace1": "",
+	"slimAutoOutputPathReplace2": "",
+	"slimAutoOutputPathStyle": 0,
+	"slimCompileOnly": 0,
+	"slimLogicless": 0,
+	"slimOutputStyle": 1,
+	"slimRailsCompatible": 0,
+	"stylusAutoOutputPathRelativePath": "..\/css",
+	"stylusAutoOutputPathReplace1": "stylus",
+	"stylusAutoOutputPathReplace2": "css",
+	"stylusAutoOutputPathStyle": 2,
+	"stylusDebugStyle": 0,
+	"stylusImportCSS": 0,
+	"stylusOutputStyle": 0,
+	"stylusResolveRelativeURLS": 0,
+	"typescriptAutoOutputPathRelativePath": "\/js",
+	"typescriptAutoOutputPathReplace1": "",
+	"typescriptAutoOutputPathReplace2": "",
+	"typescriptAutoOutputPathStyle": 2,
+	"typescriptCreateDeclarationFile": 0,
+	"typescriptCreateSourceMap": 0,
+	"typescriptMinifyOutput": 0,
+	"typescriptModuleType": 0,
+	"typescriptNoImplicitAny": 0,
+	"typescriptNoResolve": 0,
+	"typescriptRemoveComments": 0,
+	"typescriptTargetECMAVersion": 0,
+	"uglifyDefinesString": "",
+	"uglifyFlags2": {
+		"ascii-only": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"booleans": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"bracketize": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"cascade": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comments": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comparisons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"compress": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"conditionals": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"dead_code": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evaluate": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_funs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_vars": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"if_return": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indent-level": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"indent-start": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"inline-script": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"join_vars": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"loops": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"mangle": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"max-line-len": {
+			"active": 1,
+			"flagValue": 32000
+			},
+		"properties": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"quote-keys": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"screw-ie8": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sequences": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sort": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space-colon": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"toplevel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"warnings": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"width": {
+			"active": 1,
+			"flagValue": 80
+			}
+		},
+	"uglifyReservedNamesString": "$",
+	"websiteRelativeRoot": ""
+	},
+"settingsFileVersion": "2"
 }

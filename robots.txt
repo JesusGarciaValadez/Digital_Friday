@@ -1,6 +1,4 @@
 # robotstxt.org/
 
 User-agent: *
-Disallow: /polizas/
-Disallow: /polizas/pdf/
-Disallow: /polizas/pdf2/
+#Disallow: /
