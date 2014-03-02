@@ -287,80 +287,53 @@
 		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/README.html",
 		"outputPathIsSetByUser": 0
 		},
-	"\/Code\/templates\/css\/sass\/home.scss": {
-		"createSourceMap": 1,
-		"debugStyle": 0,
-		"decimalPrecision": 2,
-		"fileType": 4,
+	"\/Code\/templates\/index.html": {
+		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Code\/templates\/css\/sass\/home.scss",
-		"outputAbbreviatedPath": "\/css\/home.css",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
-		"useLibsass": 0
+		"inputAbbreviatedPath": "\/Code\/templates\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
 		},
-	"\/Code\/templates\/css\/sass\/main.scss": {
-		"createSourceMap": 1,
-		"debugStyle": 0,
-		"decimalPrecision": 2,
-		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Code\/templates\/css\/sass\/main.scss",
-		"outputAbbreviatedPath": "\/css\/main.css",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/Code\/templates\/css\/sass\/normalize.min.scss": {
-		"createSourceMap": 1,
-		"debugStyle": 0,
-		"decimalPrecision": 2,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Code\/templates\/css\/sass\/normalize.min.scss",
-		"outputAbbreviatedPath": "\/css\/normalize.min.css",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/Code\/templates\/footer.jade": {
+	"\/Code\/templates\/jade\/footer.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Code\/templates\/footer.jade",
-		"outputAbbreviatedPath": "\/footer.html",
+		"inputAbbreviatedPath": "\/Code\/templates\/jade\/footer.jade",
+		"outputAbbreviatedPath": "\/Code\/templates\/footer.html",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/Code\/templates\/head.jade": {
+	"\/Code\/templates\/jade\/head.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Code\/templates\/head.jade",
-		"outputAbbreviatedPath": "\/head.html",
+		"inputAbbreviatedPath": "\/Code\/templates\/jade\/head.jade",
+		"outputAbbreviatedPath": "\/Code\/templates\/head.html",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/Code\/templates\/index.jade": {
+	"\/Code\/templates\/jade\/index.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Code\/templates\/index.jade",
-		"outputAbbreviatedPath": "\/index.html",
+		"inputAbbreviatedPath": "\/Code\/templates\/jade\/index.jade",
+		"outputAbbreviatedPath": "\/Code\/templates\/index.html",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
+		},
+	"\/Code\/templates\/js\/CMVDF.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/CMVDF.js",
+		"outputAbbreviatedPath": "\/js\/CMVDF.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/Code\/templates\/js\/main.js": {
 		"fileType": 64,
@@ -419,6 +392,51 @@
 		"outputAbbreviatedPath": "\/Code\/templates\/mailing\/imgs\/head.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/Code\/templates\/sass\/home.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 2,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/home.scss",
+		"outputAbbreviatedPath": "\/css\/home.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/Code\/templates\/sass\/main.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 2,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/main.scss",
+		"outputAbbreviatedPath": "\/css\/main.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/Code\/templates\/sass\/normalize.min.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 2,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/normalize.min.scss",
+		"outputAbbreviatedPath": "\/css\/normalize.min.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
 	"\/css\/main.css": {
 		"fileType": 16,
@@ -638,6 +656,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/js\/CMVDF.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/CMVDF.min.js",
+		"outputAbbreviatedPath": "\/js\/CMVDF.min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/main.min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -855,7 +891,7 @@
 	"autoprefixerBrowserString": "> 1%, last 2 versions, ff 17, opera 12.1",
 	"autoSyncProjectSettingsFile": 1,
 	"browserRefreshDelay": 0,
-	"coffeeAutoOutputPathRelativePath": "..\/",
+	"coffeeAutoOutputPathRelativePath": "..\/..\/js\/",
 	"coffeeAutoOutputPathReplace1": "",
 	"coffeeAutoOutputPathReplace2": "",
 	"coffeeAutoOutputPathStyle": 2,
@@ -963,7 +999,7 @@
 	"hamlUseCDATA": 0,
 	"hamlUseDoubleQuotes": 0,
 	"hamlUseUnixNewlines": 0,
-	"jadeAutoOutputPathRelativePath": "..\/..\/",
+	"jadeAutoOutputPathRelativePath": "..\/",
 	"jadeAutoOutputPathReplace1": "",
 	"jadeAutoOutputPathReplace2": "",
 	"jadeAutoOutputPathStyle": 2,
@@ -1395,7 +1431,7 @@
 	"markdownEnableSmartyPants": 1,
 	"markdownExpandTabs": 1,
 	"reloadFileURLs": 1,
-	"sassAutoOutputPathRelativePath": "..\/..\/..\/..\/css\/",
+	"sassAutoOutputPathRelativePath": "..\/..\/..\/css\/",
 	"sassAutoOutputPathReplace1": "sass",
 	"sassAutoOutputPathReplace2": "css",
 	"sassAutoOutputPathStyle": 2,
