@@ -61,4 +61,4 @@ jQuery.fn.centerHeight      = function(){
     this.css( 'top', elemTop + 'px' );
 }
 //
-//  @codekit-append "vendor/jquery.uniform.js", "vendor/jquery.form.js", "vendor/jquery.validate.js", "vendor/additional-methods.js", "vendor/jquery.tools.custom.min.js", "vendor/jquery.scrollTo-1.4.3.1.js";
+//  @codekit-append "../../../js/vendor/jquery.uniform.js", "../../../js/vendor/jquery.form.js", "../../../js/vendor/jquery.validate.js", "../../../js/vendor/additional-methods.js", "../../../js/vendor/jquery.tools.custom.min.js", "../../../js/vendor/jquery.scrollTo-1.4.3.1.js";
