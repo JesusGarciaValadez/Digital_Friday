@@ -20,59 +20,25 @@ function __autoload( $className ) {
     require_once LIBS_PATH . "/{$className}.php";
 }
 
-$usuario        = new Usuarios( $dbh );
-$vistaUsuario   = new VistaUsuarios( $dbh );
+$usuario    = new Usuarios( $dbh );
 
 $site_url = SITE_URL . 'index.php';
 
 if ( $usuario->isValidSession() ) {
-        
-    $indice = 1;
-    $distritosHTML  = '';
     
     View::setViewFilesRepository( CHUNKS_PATH );
     
     $vista = new View( 'index.html' );
     
-    $infoUsers = $vistaUsuario->getInfoUser( $_SESSION['mailComparer'] );
-    
-    foreach ( $infoUsers as $key => $value ) {
-        
-        foreach ( $value as $user => $valor ) {
-            
-            $$user  = $valor;
-            
-            if ( $user == 'Completed' && ( $valor == '1' || $valor == 1 ) ) {
-                
-                //header( "location:{$site_url}?response=no-editable" );
-            }
-            $indice++;
-        }
-    }
-    
-    $States            = $vistaUsuario->getStates( );
-    $Title             = $vistaUsuario->getTitle( );
-    
     $vista->setVars( array(
-        'id'                => $ID
-        ,'mail'             => $Mail
-        ,'first_name'       => $First_Name
-        ,'last_name'        => $Last_Name
-        ,'name'             => $User_Name
-        ,'job'              => $Job
-        ,'where_are'        => $WhereFrom
-        ,'lada'             => $Lada
-        ,'phone'            => $Phone
-        ,'ext'              => $Ext
-        ,'dependency'       => $Dependency
-        ,'titulo'           => $Title
-        ,'estado'           => $States
-        ,'city'             => $City
-    ));
+        'session'   => $_GET[ 's' ],
+        'mail'      => $_GET[ 'm' ]
+    ) );
     
     $page = $vista->render( );
     
     echo $page;
 } else {
-    //header( "location:{$site_url}" );
+    
+    header( "location:{$site_url}?&m=none&s=?&err=Tu correo no esta registrado. Intentalo de nuevo desde tu invitación." );
 }

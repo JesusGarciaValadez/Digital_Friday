@@ -287,6 +287,94 @@
 		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/README.html",
 		"outputPathIsSetByUser": 0
 		},
+	"\/Code\/snippets\/classes\/libs\/Connection.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/classes\/libs\/Connection.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/classes\/libs\/Model.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/classes\/libs\/Model.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/classes\/libs\/Upload.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/classes\/libs\/Upload.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/classes\/libs\/Usuarios.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/classes\/libs\/Usuarios.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/classes\/libs\/Validator.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/classes\/libs\/Validator.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/classes\/libs\/View.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/classes\/libs\/View.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/config\/config.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/config\/config.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/controller.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/controller.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/db\/connection.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/db\/connection.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/lib\/dbConnect.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/lib\/dbConnect.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/lib\/DBQueries.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/lib\/DBQueries.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/Code\/templates\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -408,6 +496,21 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/Code\/templates\/sass\/jquery.fullPage.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 2,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/jquery.fullPage.scss",
+		"outputAbbreviatedPath": "\/css\/jquery.fullPage.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/Code\/templates\/sass\/main.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
@@ -445,6 +548,26 @@
 		"inputAbbreviatedPath": "\/css\/main.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
+		},
+	"\/img\/background_lightbox.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 921,
+		"inputAbbreviatedPath": "\/img\/background_lightbox.png",
+		"outputAbbreviatedPath": "\/img\/background_lightbox.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/close.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1337,
+		"inputAbbreviatedPath": "\/img\/close.png",
+		"outputAbbreviatedPath": "\/img\/close.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/img\/digital_friday\/barra_header.png": {
 		"fileType": 32768,
@@ -724,12 +847,42 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/vendor\/jquery-ui-1.10.4.custom.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/vendor\/jquery-ui-1.10.4.custom.js",
+		"outputAbbreviatedPath": "\/js\/jquery-ui-1.10.4.custom.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/vendor\/jquery.form.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.form.js",
 		"outputAbbreviatedPath": "\/js\/jquery.form.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/vendor\/jquery.fullPage.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/vendor\/jquery.fullPage.js",
+		"outputAbbreviatedPath": "\/js\/jquery.fullPage.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/vendor\/jquery.parallax.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/vendor\/jquery.parallax.js",
+		"outputAbbreviatedPath": "\/js\/jquery.parallax.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -776,7 +929,7 @@
 		},
 	"\/js\/vendor\/jquery.uniform.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.uniform.js",
 		"outputAbbreviatedPath": "\/js\/jquery.uniform.min.js",
@@ -877,6 +1030,50 @@
 	],
 "lastSavedByUser": "Jesús García Valadez",
 "manualImportLinks": {
+	"\/Code\/templates\/js\/plugins.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.form.js",
+			"position": 0,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.validate.js",
+			"position": 1,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/vendor\/additional-methods.js",
+			"position": 2,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.tools.custom.min.js",
+			"position": 3,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.scrollTo-1.4.3.1.js",
+			"position": 4,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.parallax.js",
+			"position": 5,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/Code\/templates\/js\/CMVDF.js",
+			"position": 6,
+			"type": 1
+			}
+		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",

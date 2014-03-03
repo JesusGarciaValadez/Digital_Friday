@@ -30,6 +30,8 @@
     };
     
     CMVDF.overlay;
+    CMVDF.closer;
+    CMVDF.tool;
     
     //  Object prototyping
     CMVDF.fn = CMVDF.prototype = {
@@ -51,24 +53,6 @@
          */
         //  !Método inicializador
         init:   function ( ) {}, 
-        /**
-         *
-         *  @function:  !makesUniform
-         *  @description:   Makes the uniform effect to radius and checkbox
-         *  @params jQuery selector.- A jQuery Selector 
-         *  @see:   http://uniformjs.com/
-         *  @author: @_Chucho_
-         *
-         */
-        //  !Crea un efecto para poder dar estilos a los elementos checkbox, 
-        //  radio, file y select
-        makesUniform:   function ( selector ) {
-            
-            _selector       = ( typeof( selector ) == "undefined" ) ? "*" : selector;
-            _selector       = ( typeof( _selector ) == "object" ) ? _selector : $( _selector );
-            
-            _selector.uniform();
-        }, 
         /**
          *
          *  @function:  !anchorMenu
@@ -143,7 +127,6 @@
                 //debug:true, 
                 rules: _rule,
                 messages: _message, 
-                ignore: 'textarea', 
                 highlight: function( element, errorClass, validClass ) {
                     $( element ).parent().addClass( 'error_wrapper' );
                 },
@@ -169,13 +152,16 @@
                             
                             if( responseText && ( responseText.success == 'true' || responseText.success == true ) ) {
                                 
-                                $( form ).fadeOut( 300, function () {
-                                    
-                                    
-                                } );
+                                $( '.alert_box' ).addClass( 'thank_you_message' );
+                                var _title   = '¡Felicidades!';
+                                var _message = '<p>' + responseText.msg + '</p>';
+                                CMVDF.openAlert( _title, _message );
                             } else {
                                 
-                                
+                                $( '.alert_box' ).addClass( 'error_message' );
+                                var _title   = '¡Lo sentimos!';
+                                var _message = '<p>' + responseText.msg + '</p>';
+                                CMVDF.openAlert( _title, _message );
                             }
                         }, 
                         resetForm: false, 
@@ -226,13 +212,12 @@
             
             $( '.alert_box h2' ).text( _title );
             $( '.alert_box' ).append( _message );
-            //CMVDF.overlay.load();
             $( '.alert_trigger' ).click( );
             $( '.alert_box' ).centerHeight( );
             $( '.alert_box' ).centerWidth( );
             $( '.alert_background' ).fadeIn( 50, function (  ) {
                 
-                $( '.alert_box' ).fadeIn( 100 );
+                $( '.alert_box' ).fadeIn( 200 );
             } );
         }, 
         /**
@@ -247,15 +232,19 @@
         //  !Cierra un cuadro de diálogo con un mensaje
         closeAlert:  function ( ) {
             
-            CMVDF.overlay.close();
-            /*$( '.alert_box' ).fadeOut( 'fast' );
-            $( '.alert_background' ).fadeOut( 'fast' );
-            $( '.alert_box h4' ).text( '' );
-            $( '.alert_box p' ).remove( );
-            $( '.alert_box form' ).remove( );
-            $( '.alert_box table' ).remove( );
-            $( '.alert_box div' ).remove( );
-            $( '.alert_box button' ).remove( );*/
+            //CMVDF.overlay.close();
+            $( '.alert_box' ).fadeOut( 200, function () {
+                
+                $( '.alert_background' ).fadeOut( 50, function () {
+                    
+                    $( '.alert_box h4' ).text( '' );
+                    $( '.alert_box p' ).remove( );
+                    $( '.alert_box form' ).remove( );
+                    $( '.alert_box table' ).remove( );
+                    $( '.alert_box div' ).remove( );
+                    $( '.alert_box button' ).remove( );
+                } );
+            } );
         }, 
         /**
          *
@@ -290,63 +279,6 @@
             $.scrollTo( _scrollYOffset, { 
                 duration: _durationInSec, 
                 axis: 'y'
-            } );
-        }, 
-        /**
-         *
-         *  @function:  !toggleValue
-         *  @description:   Does toggle if the input have a value or if doesn't
-         *  @params jQuery selector.- A jQuery Selector 
-         *  @params String valueChange.- A String with the value to change or preserve
-         *  @author: @_Chucho_
-         *
-         */
-        //  !Revisa si el valor de un input es el original o no y lo preserva o 
-        //  respeta el nuevo valor.
-        toggleValue:    function ( selector, valueChange ) {
-            
-            _selector       = ( typeof( selector ) == "undefined" ) ? "*" : selector;
-            _selector       = ( typeof( _selector ) == "object" ) ? _selector : $( _selector );
-            
-            _valueChange  = ( valueChange == "" ) ? "" : valueChange;
-            _valueChange  = ( typeof( _valueChange ) == "string" ) ? _valueChange : ( typeof( _valueChange ) == "number" ) ? parseInt( _valueChange ) : _valueChange;
-            
-            var _placeholder;
-            
-            if ( _selector.attr( 'placeholder' ) != undefined ) {
-                
-                _placeholder = String ( _selector.attr( 'placeholder' ) ).toLowerCase();
-            } else {
-                
-                _placeholder = String ( _selector.val( ) ).toLowerCase();
-            }
-            
-            /*if ( ( _placeholder == "" ) || ( _placeholder == _valueChange ) ) {
-                
-                _selector.css( { 
-                    color: '#aaa'
-                } );
-            }*/
-            
-            _selector.on( {
-                blur: function ( e ) {
-                    
-                    _comment = String( $( e.currentTarget ).val() ).toLowerCase();
-                    if ( ( _comment == _placeholder ) || ( _comment == "" ) ) {
-                        
-                        $( e.currentTarget ).val( valueChange );
-                        return false;
-                    }
-                },
-                focus: function ( e ) {
-                    
-                    _comment = String( $( e.currentTarget ).val() ).toLowerCase();
-                    if ( _comment == _placeholder ) {
-                        
-                        $( e.currentTarget ).val( '' );
-                        return false;
-                    }
-                }
             } );
         }, 
         /**

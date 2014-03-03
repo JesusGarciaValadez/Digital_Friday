@@ -286,7 +286,7 @@ abstract class Model{
            
         return $lastInsertId;
     }
-
+    
         /**
      * Edita los datos del registro que cumpla las condiciones establecidas.
      * @method update
@@ -332,8 +332,7 @@ abstract class Model{
         
         return $this->getResultSet();
     }
-
-
+    
     /**
      * @method  isValidResource()
      * @static

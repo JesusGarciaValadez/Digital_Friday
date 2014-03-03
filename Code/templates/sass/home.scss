@@ -57,15 +57,14 @@
     }
     #background{
         @extend .clearfix;
-        position: relative;
         overflow: hidden;
+        position: relative;
         width: 100%;
         z-index: 0;
         h2{
+            @include font-mask( $text_gray, em( 35, 16 ), em( 35, 35 ), normal );
             text-transform: uppercase;
-            span{
-                
-            }
+            span{ color: $text_blue; font-weight: bold; }
         }
         figure{
             display: block;
@@ -73,6 +72,10 @@
             position: relative;
             width: 100%;
             .points{}
+            img{
+                height: auto !important;
+                width: auto !important;
+            }
         }
         .clouds{
             @extend .clearfix;
@@ -87,12 +90,12 @@
             width: 100%;
         }
         h3{ 
-            @include font-mask( $grey, em( 22, 16 ), em( 22, 16 ), bold );
-            top: em( 550, 22 );
+            @include font-mask( $grey, em( 25, 16 ), em( 25, 25 ), bold );
+            top: em( 550, 25 );
         }
         h4{ 
-            @include font-mask( $grey, em( 16, 16 ), em( 16, 16 ), normal );
-            top: em( 590, 16 );
+            @include font-mask( $grey, em( 25, 16 ), em( 25, 25 ), normal );
+            top: em( 590, 25 );
         }
         form{
             border: 0 none transparent;
@@ -110,7 +113,7 @@
                 margin: 0 auto;
                 padding: 0;
                 #submit_button{
-                    @include font-mask( #FFF, em( 16, 16 ), em( 40, 16 ), bold );
+                    @include font-mask( #FFF, em( 30, 16 ), em( 40, 30 ), bold );
                     background: #F56818;
                     border: 1px solid #F75F00;
                     height: 100%;
@@ -127,85 +130,154 @@
                 margin: 130px auto 0;
                 position: relative;
             }
-            .points{ position: relative; top: em( 495, 16 ); }
-        }
-        h2#online_offline{
-            
-            span{}
+            .points{ position: absolute; top: em( 500, 16 ); }
         }
         #five{
             
-            .points{}
-            .triangle{}
-            .cloud_two{}
-            .cloud_one{}
-        }
-        h2#digital_ecosystem{
-            
-            span{}
+            h2#online_offline{
+                font-size: em( 20, 16 );
+                right: 15%;
+                position: absolute;
+                text-align: right;
+                top: 45%;
+                z-index: 5;
+                span{ font-size: em( 40, 20 ); line-height: em( 40, 40 ); }
+            }
+            .points{
+                right: 15%;
+                position: absolute;
+                top: 54%;
+                z-index: 5;
+            }
+            .triangle,
+            .cloud_two,
+            .cloud_one{
+                position: absolute;
+                z-index: 0;
+            }
+            .triangle{ right: 40%; top: 27%; }
+            .cloud_two{ right: 1%; top: 43%; }
+            .cloud_one{ bottom: 2%; left: 15%; }
         }
         #fourth{
             
-            h2{
-                
-                span{}
+            h2#digital_ecosystem{
+                font-size: em( 25, 16 );
+                padding: 0 0 0 150px;
+                position: relative;
+                top: 45%;
+                z-index: 5;
+                span{ font-size: em( 40, 25 ); line-height: em( 40, 40 ); }
             }
-            .points{}
-            .cloud_one{}
-        }
-        h2#digital_marketing{
-            
-            span{}
+            .points{
+                left: 150px;
+                position: absolute;
+                top: 54%;
+                z-index: 5;
+            }
+            .cloud_one{
+                left: 3%;
+                position: absolute;
+                top: 41%;
+            }
         }
         #third{
             
-            h2{
-                
-                span{}
+            h2#digital_marketing{
+                font-size: em( 25, 16 );
+                right: 15%;
+                position: absolute;
+                text-align: right;
+                top: 45%;
+                z-index: 5;
+                span{ font-size: em( 35, 25 ); line-height: em( 40, 35 ); }
             }
-            .points{}
-            .cloud_three{}
-            .triangle{}
-            .cloud_two{}
+            .points{
+                right: 15%;
+                position: absolute;
+                top: 54%;
+                z-index: 5;
+            }
+            .cloud_three,
+            .triangle,
+            .cloud_two,
             .cloud_one{}
-        }
-        h2#digital_royal_family{
-            
-            span{}
+            .cloud_three{
+                position: absolute;
+                z-index: 0;
+            }
+            .triangle{ left: 15%; top: 29%; }
+            .cloud_two{ top: 48%; right: 8%; }
+            .cloud_one{ bottom: 10%; left: -13%; }
+            .cloud_three{ left: 13%; top: 5%; }
         }
         #second{
             
-            h2{
-                
-                span{}
+            h2#digital_royal_family{
+                font-size: em( 25, 16 );
+                padding: 0 0 0 150px;
+                position: relative;
+                top: 45%;
+                z-index: 5;
+                span{ font-size: em( 35, 25 ); line-height: em( 40, 35 ); }
             }
-            .points{}
-            .cloud_three{}
-            .cloud_two{}
-            .cloud_one{}
+            .points{
+                left: 150px;
+                position: absolute;
+                top: 54%;
+                z-index: 5;
+            }
+            .cloud_three,
+            .cloud_two,
+            .cloud_one{
+                position: absolute;
+                z-index: 0;
+            }
+            .cloud_three{ right: 0; top: 0%; }
+            .cloud_two{ left: -10%; top: 50%; }
+            .cloud_one{ right: -10%; bottom: 10%; }
         }
         #first{
-            
-            .cloud_two{}
-            .cloud_one{}
+            overflow: hidden;
+            .cloud_one, 
+            .cloud_two{
+                position: absolute;
+                top: 49%;
+            }
+            .cloud_two{ 
+                left: -10%;
+            }
+            .cloud_one{ 
+                right: -10%;
+            }
         }
         h1{
+            @include font-mask( $text_gray, em( 35, 16 ), em( 35, 35 ), normal );
             bottom:380px;
             position: absolute;
             text-align: center;
             text-transform: uppercase;
-            span{}
+            span{ color: $text_blue; font-weight: bold; }
         }
         .instructions{
             @extend .clearfix;
             img{ position: absolute; }
             .session{ bottom: em( 500, 16 ); }
             .vertical_points{ bottom: em( 350, 16 );}
-            .arrow{ bottom:em( 105, 16 ); z-index: 0; }
-            .hands{ bottom:em( 55, 16 ); z-index: 1; }
+            .arrow{
+                bottom:em( 105, 16 );
+                z-index: 0;
+            }
+            .hands{ 
+                bottom:em( 55, 16 );
+                display: block;
+                margin: 0 auto;
+                z-index: 1;
+            }
         }
-        p{
+        .scroll{
             @extend .clearfix;
+            @include font-mask( $text_gray, em( 18, 16 ), em( 18, 18 ), normal );
             bottom: em( 120, 16 );
             display:block;
             left: 23px;
@@ -232,7 +304,7 @@
             .ground{
                 height: auto;
                 img{
-                    width: 100%;
+                    width: 100% !important;
                 }
             }
         }

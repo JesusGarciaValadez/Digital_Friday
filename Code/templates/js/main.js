@@ -12,6 +12,35 @@
     //  When DOM is loaded
     $( function ( ) {
         
+        /**
+         *  Function to detect the id of document by param 
+         *
+         */ 
+        var Url = String( location.href );
+        if ( Url.search( /index.html/i ) ) {
+            
+            Url         = Url.replace( /.*\?(.*?)/, "$1" );
+            Variables   = Url.split ( "&" );
+            for ( i = 0; i < Variables.length; i++ ) {
+                
+                Separ   = Variables[ i ].split( "=" );
+                if ( Separ[ 1 ] != undefined && Separ[ 1 ] != null ) {
+                    
+                    eval ( 'var ' + Separ[ 0 ] + '="' + Separ[ 1 ] + '"' );
+                }
+            }
+        }
+        
+        var err;
+        if ( err != undefined && err != null ) {
+            
+            var expression      = new RegExp( '%20', 'gi' );
+            err = err.replace( expression, ' ' );
+            var errorMessage    = '<p>' + err + '</p>';
+            errorMessage        = errorMessage.replace( /%C3%B3/gi, 'ó' )
+            CMVDF.openAlert( 'Error', errorMessage );
+        }
+        
         if ( $( ".loader" ).exists() ) {
             
             $( '.alert_background' ).fadeOut( 300 );
@@ -19,6 +48,15 @@
         }
         
         //  Control del background
+        if ( $( '#background' ).exists() ) {
+            
+            var windowWidth = $( window ).innerWidth();
+            $( '#background' ).width( windowWidth );
+        }
+        if ( $( 'figure' ).exists() ) {
+            
+            $( 'figure.scene' ).width( $( window ).innerWidth() )
+        }
         if ( $( "h1" ).exists() ) {
             
             $( "h1" ).centerWidth();
@@ -49,8 +87,8 @@
         }
         if ( $( "#six .points" ).exists() ) {
             
-            var pointOne    = CMVDF.getCenterWidth( $( "#six .points" ).eq( 0 ) ) - 85;
-            var pointTwo    = CMVDF.getCenterWidth( $( "#six .points" ).eq( 1 ) ) + 25;
+            var pointOne    = CMVDF.getCenterWidth( $( "#six .points" ).eq( 0 ) ) - 80;
+            var pointTwo    = CMVDF.getCenterWidth( $( "#six .points" ).eq( 1 ) ) + 80;
             
             $( "#six .points" ).eq( 0 ).css( { 
                 left: pointOne + 'px'
@@ -75,32 +113,7 @@
     
     //  When DOM is ready
     $( document ).on( 'ready', function ( e ) {
-        
-        if ( $( '#nav' ).exists() ) {
             
-            $( 'a[title="Home"]' ).on( 'click', function ( e ) {
-                
-                e.preventDefault();
-                e.stopPropagation();
-                
-                CMVDF.smoothScroll( '#home', 300 );
-                
-                $( 'nav ul li' ).removeClass( 'active' );
-                CMVDF.toggleClass( $( e.currentTarget ).parent(), 'active' );
-            } );
-            $( 'a[title="Contacto"]' ).on( 'click', function ( e ) {
-                
-                e.preventDefault();
-                e.stopPropagation();
-                
-                var topOffset   = $( '#contact_title' ).offset().top - 55;
-                CMVDF.smoothScroll( topOffset, 300 );
-                
-                $( 'nav ul li' ).removeClass( 'active' );
-                CMVDF.toggleClass( $( e.currentTarget ).parent(), 'active' );
-            } );
-        }
-        
         //  !Crea una instancia de jQuery Overlay
         if ( $( '.alert_box' ).exists() ) {
             
@@ -114,11 +127,12 @@
                 onBeforeLoad: function ( e ) {
                     
                     $( '.alert_background' ).height( '100%' );
+                    $( '.alert_background' ).width( $( window ).innerWidth() );
                     $( '.alert_box' ).centerWidth();
                     $( '.alert_box' ).centerHeight();
                 },
                 onLoad: function() {
-                    $( '.alert_background' ).fadeIn( 100 );
+                    $( '.alert_background' ).fadeIn( 300 );
                 },
                 onBeforeClose:  function ( ){
                     
@@ -134,193 +148,51 @@
                         $( '.alert_box div.confirm' ).remove( );
                     } );
                 },
-                onClose: function ( e ) {
-                    
-                }
+                onClose: function ( e ) {}
             } );
             
             CMVDF.overlay    = $( '.alert_trigger' ).data( 'overlay' );
             
             $( '.alert_background' ).height( $( 'body' ).height() );
-        }
-        
-        //  Crea una instancia de jQuery Overlay para el home de descubreone.mx
-        //  Calcula la distancia entre el margen izquierdo para posicionar
-        //  la capa del video. Si en menor de 0 (ocurre en iPhone) utiliza 
-        //  el ancho del body en vez del ancho de la ventana para hacer 
-        //  el cálculo
-        if ( $( '.overlay.black' ).exists() ) {
-            
-            $( '.overlay.black' ).centerWidth();
-            
-            if ( $( '.video' ).exists() ) {
-                
-                var myVideo = document.getElementsByTagName( 'video' )[ 0 ];
-            }
-            CMVDF.doOverlay( 'img[rel]', {
-                effect: 'apple', 
-                // custom top position
-                //top: 260,
-                // some mask tweaks suitable for facebox-looking dialogs
-                mask: {
-                    // you might also consider a "transparent" color for the mask
-                    color: '#FFF',
-                    // load mask a little faster
-                    loadSpeed: 200,
-                    // very transparent
-                    opacity: 0.5
-                },
-                // disable this for modal dialog-type of overlays
-                closeOnClick: true,
-                closeOnEsc: true, 
-                // load it immediately after the construction
-                load: true, 
-                onBeforeLoad: function ( e ) {
-                    
-                }, 
-                onLoad: function ( e ) {
-                   
-                    if ( myVideo && myVideo.paused ) {
-                        
-                        myVideo.play();
-                    }
-                }, 
-                onBeforeClose: function ( e ) {
-                    
-                    var player;
-                    function onYouTubeIframeAPIReady() {
-                        
-                        player  = new window.YT.Player( 'ytplayer', {
-                            events: {
-                                'onReady': onPlayerReady,
-                                'onStateChange': onPlayerStateChange
-                            }
-                        });
-                    }
-                    
-                    function onPlayerReady( event ) {
-                        
-                        event.target.playVideo();
-                    }
-                    
-                    var done = false;
-                    function onPlayerStateChange( event ) {
-                        
-                        if ( event.data == YT.PlayerState.PLAYING ) {
-                            
-                            stopVideo();
-                        }
-                    }
-                    function stopVideo() {
-                        
-                        player.stopVideo();
-                    }
-                }, 
-                onClose: function ( e ) {
-                    
-                    if ( myVideo ) {
-                        
-                        myVideo.pause();
-                    }
-                    /*if ( $( '#exposeMask:visible' ).is( ':visible' ) && $( 'object,embed' ).exists() ) {
-                        
-                        $( 'object,embed' ).css( {
-                            display: "none", 
-                            opacity: "0", 
-                            filter: "alpha(opacity=0)", 
-                            visibility: "none"
-                        } );
-                    }*/
-                }
-            } );
             
             $( window ).on( {
                 resize: function ( e ) {
                     
-                    $( '.overlay.black' ).centerWidth();
+                    $( '.alert_box' ).centerWidth();
                 },
                 touchstart: function ( e ) {
                     
-                    $( '.overlay.black' ).centerWidth();
+                    $( '.alert_box' ).centerWidth();
                 }, 
                 touchend: function ( e ) {
                     
-                    $( '.overlay.black' ).centerWidth();
+                    $( '.alert_box' ).centerWidth();
                 }
+            } );
+        }
+        
+        if ( $( 'a.close' ).exists() ) {
+            
+            $( 'a.close' ).on( 'click', function ( e ) {
+                
+                CMVDF.closeAlert();
             } );
         }
         
         // Validación de los formularios
         if ( $( 'form' ).exists() ) {
             
-            CMVDF.makesUniform( 'select' );
-            
-            CMVDF.toggleValue( '#contact_name', 'Nombre' );
-            CMVDF.toggleValue( '#contact_business', 'Empresa' );
-            CMVDF.toggleValue( '#contact_phone', 'Teléfono' );
-            CMVDF.toggleValue( '#contact_mail', 'Email' );
-            
             var rules   = { 
-                    one: {
+                    mail_verifier: {
                         required: true
                     }, 
-                    two: {
+                    session: {
                         required: true
-                    }, 
-                    three: {
-                        required: true
-                    }, 
-                    four: {
-                        required: true
-                    }, 
-                    five: {
-                        required: true
-                    }, 
-                    six: {
-                        required: true
-                    }, 
-                    seven: {
-                        required: true
-                    }, 
-                    eight: {
-                        required: true
-                    }, 
-                    nine: {
-                        required: true
-                    }, 
-                    ten: {
-                        required: false,
-                        maxlength: 255
-                    }, 
-                    eleven: {
-                        required: true
-                    }, 
-                    twelve: {
-                        required: true
-                    }, 
-                    thirteen: {
-                        required: true
-                    }, 
-                    fourteen: {
-                        required: false,
-                        maxlength: 255
                     }
                 };
             var messages    = {
-                    one: "Por favor, selecciona una opción", 
-                    two: "Por favor, selecciona una opción", 
-                    three: "Por favor, selecciona una opción", 
-                    four: "Por favor, selecciona una opción", 
-                    five: "Por favor, selecciona una opción", 
-                    six: "Por favor, selecciona una opción", 
-                    seven: "Por favor, selecciona una opción", 
-                    eight: "Por favor, selecciona una opción", 
-                    nine: "Por favor, selecciona una opción", 
-                    ten: "Por favor, selecciona una opción", 
-                    eleven: "Por favor, selecciona una opción", 
-                    twelve: "Por favor, selecciona una opción", 
-                    thirteen: "Por favor, selecciona una opción", 
-                    fourteen: "Por favor, selecciona una opción", 
+                    mail_verifier: "Por favor, selecciona una opción", 
+                    session: "Por favor, selecciona una opción", 
                     required: "Por favor, selecciona una opción", 
                     minlength: "Por favor, haga su respuesta más amplia.", 
                     maxlength: "Por favor, acorte su respuesta", 
@@ -330,6 +202,62 @@
                 }
             
             CMVDF.validateForms( rules, messages );
+        }
+        
+        if ( $( 'figure.scene' ).exists() ) {
+            
+            /*$( 'figure.scene' ).parallax( {
+              calibrateX: false,
+              calibrateY: true,
+              invertX: false,
+              invertY: true,
+              limitX: false,
+              limitY: 10,
+              scalarX: 2,
+              scalarY: 8,
+              frictionX: 0.2,
+              frictionY: 0.8
+            } );*/
+        }
+        
+        if ( $( '#background' ).exists() ) {
+            
+            CMVDF.smoothScroll( $( '.rocket' ), 300 );
+            
+            $( window ).on( 'scroll', function ( e ) {
+                CMVDF.tool = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+                
+                console.log( CMVDF.tool );
+                
+                /*if ( CMVDF.tool == 0 ) {
+                    $( '.rocket' ).animate( {
+                        top:        '-310px', 
+                        bottom:     'auto'
+                    }, 1000 );
+                }*/
+                
+                if ( CMVDF.tool > 0 && CMVDF.tool < 7633 ) {
+                    
+                    $( '.rocket' ).css( {
+                        position:   'fixed'
+                    } );
+                    $( '.rocket' ).animate( {
+                        bottom:     'auto',
+                        top:        '50%',
+                    }, 1000 );
+                }
+                
+                if ( CMVDF.tool >= 7634 ) {
+                    console.log( 'boom' );
+                    $( '.rocket' ).css( {
+                        position:   'absolute'
+                    } );
+                    $( '.rocket' ).animate( {
+                        top:        'auto',
+                        bottom:     '-155px'
+                    }, 1000 );
+                }
+            } );
         }
     } );
     

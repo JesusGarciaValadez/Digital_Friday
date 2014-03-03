@@ -9,16 +9,30 @@
 
 class Usuarios extends Model{
     
-    protected $_logs = null;
     protected $_template = null;
     private $_PDOConn = null;
     
     public function __construct($conn) {
         
-        $this->_tableName = '`persona`';
+        $this->_tableName = '`cmv`.`digital_friday_mails` AS m';
         $this->_primaryKey = '`id`';
         $this->setMysqlConn($conn);
         $this->_PDOConn = $conn;
+    }
+    
+    /**
+     * valida si existe una sesion activa en sistema mediante la matriz de sesion.
+     * @method isValidSession
+     * @access public
+     * @return boolean 
+     */
+    public function isValidSession ( ) {
+        
+        $mail       = ( isset( $_GET[ 'm' ] ) && !empty( $_GET[ 'm' ] ) ) ? $_GET[ 'm' ] : false;
+        $session    = ( isset( $_GET[ 's' ] ) && !empty( $_GET[ 's' ] ) ) ? $_GET[ 's' ] : false;
+        $message    = ( isset( $_GET[ 'e' ] ) && !empty( $_GET[ 'e' ] ) ) ? $_GET[ 'e' ] : false;
+        
+        return ( $mail ) ? ( ( $session ) ? true : ( ( $message )? true : false ) ) : false;
     }
     
     /**
@@ -31,13 +45,15 @@ class Usuarios extends Model{
      */
     public function getExists ( $data ) {
         $response = array();
-        $fields = array( '`mail`' );
+        $fields = array( 'm.`user_mail` AS Mail, m.`id_user` AS ID_User' );
         $conditions = array();
-        $site_url = SITE_URL . 'search.html';
-        
+        $conditions['where']    = "m.`user_mail`='{$data['mail_verifier']}'";
         $parameters = array (
-            'mail' => array ( 'requerido' => 1 ,'validador' => 'esEmail', 'mensaje' => 'El correo es obligatorio.')
+            'mail_verifier' => array ( 'requerido' => 1 ,'validador' => 'esAlfaNumerico', 'mensaje' => 'El correo es obligatorio.'),
+            'session' => array ( 'requerido' => 1 ,'validador' => 'esNumerico', 'mensaje' => 'La sesión es obligatoria.'),
         );
+        
+        $site_url = SITE_URL . 'index.php';
         
         $form = new Validator( $data, $parameters );
         
@@ -47,44 +63,54 @@ class Usuarios extends Model{
             $response = array( 'success' => 'false', 'message'=> $form->getMessage( ) );
         } else {
             //  !The form is valid
-            array_push( $fields, '`is_completed`' );
-            $conditions['where']    = "`mail`='{$data['mail']}'";
             
             try {
                 $this->_PDOConn->beginTransaction( );
                 $resultSet = $this->select( $fields, $conditions );
                 
-                $encode = sha1( $data[ 'mail' ] );
-                
                 if ( count( $resultSet ) > 0 ) {
-                    
-                    if ( $resultSet[0]['is_completed'] == '0' ) {
-                        
-                        $_SESSION[ 'is_completed' ]   = false;
-                        if ( $encode == $_SESSION[ 'mail' ] ) {
-                            
-                            $site_url = SITE_URL . "edit.php?m={$encode}";
-                        }
-                    } else {
-                        
-                        $site_url = SITE_URL . "search.html?response=no-editable";
-                    }
-                    
                     $this->_PDOConn->commit();
+                    return $resultSet[ 0 ][ 'ID_User' ];
                 } else {
-                    
-                    $_SESSION[ 'is_completed' ]   = false;
-                    if ( $encode == $_SESSION[ 'mail' ] ) {
-                        
-                        $site_url = SITE_URL . "create.php?m={$encode}";
-                    }
+                    $this->_PDOConn->rollBack();
+                    return false;
                 }
-                
-                return $site_url;
             }catch ( PDOException $e ){
                 $this->_PDOConn->rollBack();
-                $response = array ('success'=>'false','msg'=>'el servicio no esta disponible');
+                return false;
             }
+        }
+    }
+    
+    public function isAlreadyRegistered ( $id, $sessionToCheck ) {
+        
+        $response = array();
+        $this->setTableName( '`cmv`.`digital_friday_registers` AS r, `cmv`.`digital_friday_sessions` AS s' );
+        
+        $fields = array( "r.`id_user_mail` AS ID_Mail, 
+       (SELECT s.`id_session` AS ID_Session FROM `cmv`.`digital_friday_sessions` AS s WHERE s.`course_session` = '{$sessionToCheck}' ) AS ID_User" );
+        $conditions = array();
+        $site_url = SITE_URL . 'index.php';
+        
+        $conditions['where']    = "r.`id_user_mail` = '{$id}' AND s.`id_session` = '{$sessionToCheck}'";
+        
+        try {
+            $this->_PDOConn->beginTransaction( );
+            $resultSet = $this->select( $fields, $conditions );
+            
+            if ( count( $resultSet ) == 0 ) {
+                
+                $this->_PDOConn->commit();
+                return false;
+            } else {
+                
+                $this->_PDOConn->rollBack();
+                return true;
+            }
+            
+        }catch ( PDOException $e ){
+            $this->_PDOConn->rollBack();
+            $response = array ('success'=>'false','msg'=>'el servicio no esta disponible');
         }
     }
     
@@ -95,106 +121,66 @@ class Usuarios extends Model{
      * @param mixed $data contiene la informacion basica necesaria
      * @return string 
      */
-    public function saveUser ( $data, $action ) {
-        $response = array();
-        $conditions = array();
-        $fields = array('id');
+    public function saveUser ( $data, $id, $sessionToCheck ) {
+        $response   = array();
+        $id_course;
         
-        foreach ( $_POST as $key => $value ) {
+        //  Obtiene el id del curso
+        try {
+            $this->setTableName( '`cmv`.`digital_friday_sessions` AS s' );
+            $fields = array( "s.`id_session` AS ID_Session, s.`course_session` AS Course" );
+            $conditions['where']    = "s.`id_session` = '{$sessionToCheck}'";
             
-            $data[ $key ] = ( is_numeric( $value ) ) ? $value : (string) $value;
+            $this->_PDOConn->beginTransaction( );
+            $resultSet = $this->select( $fields, $conditions );
+            
+            if ( count( $resultSet ) > 0 ) {
+                
+                $this->_PDOConn->commit();
+                $id_course  = $resultSet[ 0 ][ 'Course' ];
+            } else {
+                
+                $this->_PDOConn->rollBack();
+                $response = array ( "success" =>'false',"message"=>utf8_encode('¡No pudimos completar tu registro! ¿Puedes intentarlo nuevamente?'));
+            }
+            
+        }catch ( PDOException $e ){
+            $this->_PDOConn->rollBack();
+            $response = array ('success'=>'false','msg'=>'el servicio no esta disponible');
         }
         
-        $parameters = array(
-            'uset_edit_mail'            =>  array( 'requerido' => 0, 'validador' => 'esEmail', 'mensaje' => utf8_encode( 'El nombre solo debe contener letras.' ) )
-            ,'user_edit_first_name'     =>  array( 'requerido' => 0, 'validador' => 'esAlfaNumerico', 'mensaje' => utf8_encode( 'El nombre solo debe contener letras.' ) )
-            ,'user_edit_last_name'      =>  array( 'requerido' => 0, 'validador' => 'esAlfaNumerico', 'mensaje' => utf8_encode( 'El nombre solo debe contener letras.' ) )
-            ,'user_edit_name'           =>  array( 'requerido' => 0, 'validador' => 'esAlfaNumerico', 'mensaje' => utf8_encode( 'El nombre solo debe contener letras.' ) )
-            ,'user_edit_job'            =>  array( 'requerido' => 0, 'validador' => 'esAlfaNumerico', 'mensaje' => utf8_encode( 'El nombre solo debe contener letras.' ) )
-            ,'user_edit_where'          =>  array( 'requerido' => 0, 'validador' => 'esAlfaNumerico', 'mensaje' => utf8_encode( 'El nombre solo debe contener letras.' ) )
-            ,'user_edit_lada'           =>  array( 'requerido' => 0, 'validador' => 'esAlfaNumerico', 'mensaje' => utf8_encode( 'El nombre solo debe contener letras.' ) )
-            ,'user_edit_phone'          =>  array( 'requerido' => 0, 'validador' => 'esAlfaNumerico', 'mensaje' => utf8_encode( 'El nombre solo debe contener letras.' ) )
-            ,'user_edit_ext'            =>  array( 'requerido' => 0, 'validador' => 'esAlfaNumerico', 'mensaje' => utf8_encode( 'El nombre solo debe contener letras.' ) )
-            ,'user_edit_dependency'     =>  array( 'requerido' => 0, 'validador' => 'esAlfaNumerico', 'mensaje' => utf8_encode( 'El nombre solo debe contener letras.' ) )
-            ,'user_edit_title'          =>  array( 'requerido' => 0, 'validador' => 'esNumerico', 'mensaje' => utf8_encode( 'El nombre solo debe contener letras.' ) )
-            ,'user_edit_state'          =>  array( 'requerido' => 0, 'validador' => 'esNumerico', 'mensaje' => utf8_encode( 'El nombre solo debe contener letras.' ) )
-            ,'user_edit_city'           =>  array( 'requerido' => 0, 'validador' => 'esAlfaNumerico', 'mensaje' => utf8_encode( 'El nombre solo debe contener letras.' ) )
-        );
-        
-        $form = new Validator( $data, $parameters );
-        
-        if ( $this->isValidSession() ) {
+        //  Inserta los datos del usuari para el registro al curso
+        try{
+            $this->setTableName( '`cmv`.`digital_friday_registers`' );
+            $fields = array('id');
             
-            if ( ! $form->validate() ){
-                $response = array( 'success' => 'false','message'=> $form->getMessage() );
-            }else{
-                try{
-                    $this->_PDOConn->beginTransaction();
-                    $this->_primaryKey  = 'a.`id_persona`';
-                    
-                    //  !Update de datos de tabla persona
-                    $this->setTableName( '`persona` as A' );
-                    
-                    $dataUpdate = array(
-                        'mail'          =>  $data[ 'uset_edit_mail' ]
-                        ,'first_name'   =>  $data[ 'user_edit_first_name' ]
-                        ,'last_name'    =>  $data[ 'user_edit_last_name' ]
-                        ,'user_name'    =>  $data[ 'user_edit_name' ]
-                        ,'job'          =>  $data[ 'user_edit_job' ]
-                        ,'where_from'   =>  $data[ 'user_edit_where' ]
-                        ,'lada'         =>  $data[ 'user_edit_lada' ]
-                        ,'phone'        =>  $data[ 'user_edit_phone' ]
-                        ,'ext'          =>  $data[ 'user_edit_ext' ]
-                        ,'dependency'   =>  $data[ 'user_edit_dependency' ]
-                        ,'id_title'     =>  $data[ 'user_edit_title' ]
-                        ,'id_state'     =>  $data[ 'user_edit_state' ]
-                        ,'city'         =>  $data[ 'user_edit_city' ]
-                        ,'is_completed' =>  1
-                        ,'date_registry'=>  date( 'd m Y H:i:s' )
-                    );
-                    
-                    if ( $action == 'edit' ) {
-                        
-                        $where      = "a.`mail` = '{$data[ 'uset_edit_mail' ]}'";
-                        
-                        $this->update( $dataUpdate, $where );
-                    } else if( $action == 'create' ) {
-                        
-                        $this->setTableName( '`persona`' );
-                        
-                        $this->insert( $dataUpdate );
-                    }
-                    $success    = $this->getNumRows( );
-                    
-                    $this->_PDOConn->commit();
-                    $response = array ( "success" =>'true',"message"=>utf8_encode('La informacion del usuario ha sido guardada exitosamente.¿Quieres volver a la pagina de busqueda?'));
-                }catch( PDOException $e ) {
-                    
-                    $this->_PDOConn->rollBack( );
-                    $response = array ( "success" =>'false', "message"    =>'el servicio no esta disponible');
-                }
+            $this->_PDOConn->beginTransaction();
+            $this->_primaryKey  = '`id`';
+            
+            $dataUpdate = array(
+                'id_user_mail'  => $id,
+                'id_session'    => $id_course,
+                'date_session'  => date( 'd-m-Y H:i:s' )
+            );
+            
+            $this->insert( $dataUpdate );
+            
+            $success    = $this->getNumRows( );
+            
+            if ( count( $success ) ) {
+                $this->_PDOConn->commit();
+                $response = array ( "success" =>'true',"message"=>utf8_encode('&iexcl;Muchas gracias por registrarte. Nos vemos el viernes!'));
+            } else {
+                
+                $this->_PDOConn->rollBack();
+                $response = array ( "success" =>'false',"message"=>utf8_encode('¡No pudimos completar tu registro! ¿Puedes intentarlo nuevamente?'));
             }
-        }else{
+        }catch( PDOException $e ) {
             
-            $response = array( "success" => 'false',"message" => utf8_encode('la sesi&oacute;n no es v&aacute;lida') );
+            $this->_PDOConn->rollBack( );
+            $response = array ( "success" =>'false', "message"    =>'el servicio no esta disponible');
         }
         
         return $response;
-        
-    }
-    
-    /**
-     * valida si existe una sesion activa en sistema mediante la matriz de sesion.
-     * @method isValidSession
-     * @access public
-     * @return boolean 
-     */
-    public function isValidSession ( ) {
-        
-        $mail   = ( isset( $_GET[ 'm' ] ) && !empty( 'm' ) ) ? $_GET[ 'm' ] : ( isset( $_SESSION[ 'mail' ] ) && !empty( $_SESSION[ 'mail' ]) ) ? $_SESSION[ 'mail' ] : false;
-        
-        $mail   = ( isset( $_SESSION[ 'is_completed' ] ) && $_SESSION[ 'is_completed' ] == false && $mail === true ) ? true : $mail;
-        
-        return ( $mail ) ? true : false;
     }
 }

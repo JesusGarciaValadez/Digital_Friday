@@ -22,33 +22,33 @@ function __autoload($className) {
 
 require_once SNIPPETS_PATH . '/db/connection.php';
 
-$site_url = SITE_URL . 'search.html';
+$site_url = SITE_URL . 'index.php';
 
-$action                         = ( isset( $_GET['action'] ) ) ? $_GET['action']: "";
-if ( isset( $_POST[ 'mail' ] ) ) 
-    $_SESSION[ 'mailComparer' ]     = $_POST[ 'mail' ];
+$action = $_GET[ 'action' ];
 
 switch ($action) {
-    case 'create':
-        $edit    = new Usuarios( $dbh );
-        $success = $edit->saveUser( $_POST, 'create' );
-        $success = json_encode( $success );
-        break;
-    case 'edit': 
-        $delete    = new Usuarios( $dbh );
-        $success = $delete->saveUser( $_POST, 'edit' );
-        $success = json_encode( $success );
-        break;
-    default:
-        if ( !isset( $_POST ) ) {
-            header( "location:{$site_url}" );
+    case 'checkIn':
+        $user           = new Usuarios( $dbh );
+        $exists         = $user->getExists( $_POST );
+        $isRegistered   = $user->isAlreadyRegistered( $exists, $_POST[ 'session' ] );
+        if ( $exists ) {
+            
+            if ( $isRegistered ) {
+                
+                $success    = json_encode( array ('success'=>'false','msg'=>'Ya estas registrado en este curso. &iexcl;Muchas Gracias!.') );
+            } else {
+                
+                $success    = $user->saveUser( $_POST, $exists, $_POST[ 'session' ] );
+                $success    = json_encode( $success );
+            }
         } else {
             
-            $_SESSION[ 'mail' ] = sha1( $_SESSION[ 'mailComparer' ] );
-            $check  = new Usuarios( $dbh );
-            $success = $check->getExists( $_POST );
-            
-            header( "location:{$success}" );
+            $success    = json_encode( array ('success'=>'false','msg'=>'El correo no existe. Int&eacute;ntalo nuevamente desde tu invitaci&oacute;n.') );
+        }
+        break;
+    default:
+        if ( !isset( $_GET ) ) {
+            header( "location:{$site_url}:?err=Hubo un error. Inténtalo de nuevo desde tu invitación." );
         }
         break;
 }
