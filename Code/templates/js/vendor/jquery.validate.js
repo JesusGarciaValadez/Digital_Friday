@@ -265,6 +265,25 @@ $.extend($.validator, {
     },
 
     messages: {
+        required:"Este campo es requerido.",
+        remote:"Por favor, arregle este campo.",
+        email:"Por favor, introduzca una dirección de correo válida..",
+        url:"Por favor, escriba una URL válida.",
+        date:"Por favor, escriba una fecha válida.",
+        dateISO:"Por favor, escriba una fecha válida (ISO).",
+        number:"Por favor, introduzca un número válido.",
+        digits:"Por favor, escriba sólo dígitos.",
+        creditcard:"Por favor, introduzca un número de tarjeta de crédito válido.",
+        equalTo:"Por favor, escriba el mismo valor otra vez.",
+        maxlength: $.validator.format("Por favor, no escriba más de {0} caracteres."),
+        minlength: $.validator.format("Por favor, escriba al menos {0} caracteres."),
+        rangelength: $.validator.format("Por favor, escriba un valor entre {0} y {1} caracteres de largo."),
+        range: $.validator.format("Por favor, escriba un valor entre {0} y {1}."),
+        max: $.validator.format("Por favor, escriba un valor menor o igual a {0}."),
+        min: $.validator.format("Por favor, escriba un valor mayor o igual a {0}.")
+    },
+/*
+    messages: {
         required: "This field is required.",
         remote: "Please fix this field.",
         email: "Please enter a valid email address.",
@@ -282,6 +301,7 @@ $.extend($.validator, {
         max: $.validator.format("Please enter a value less than or equal to {0}."),
         min: $.validator.format("Please enter a value greater than or equal to {0}.")
     },
+*/
 
     autoCreateRanges: false,
 

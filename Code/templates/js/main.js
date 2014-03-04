@@ -413,6 +413,19 @@
             $( '.alert_background' ).fadeOut( 300 );
             $( ".loader" ).fadeOut( 300 );
         }
+        if ( $( "figure" ).exists() ) {
+            
+            var winWidth;
+            if ( $.browser.msie && $.browser.version == '8.0' ) {
+                
+                winWidth    = $(window).width();
+            } else {
+                
+                winWidth    = window.innerWidth;
+            }
+            
+            $( "figure" ).height( winWidth );
+        }
         
         //  Control del background
         if ( $( "h1" ).exists() ) {
