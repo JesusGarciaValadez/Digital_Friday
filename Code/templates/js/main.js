@@ -229,6 +229,9 @@
                 
                 console.log( CMVDF.tool );
                 
+                var backgroundHeight    = ( $( '#background' ).height() ) - ( $( window ).innerHeight() ) ;
+                
+                
                 /*if ( CMVDF.tool == 0 ) {
                     $( '.rocket' ).animate( {
                         top:        '-310px', 
@@ -236,7 +239,7 @@
                     }, 1000 );
                 }*/
                 
-                if ( CMVDF.tool > 0 && CMVDF.tool < 7633 ) {
+                if ( CMVDF.tool > 0 && CMVDF.tool < ( backgroundHeight - 1 ) ) {
                     
                     $( '.rocket' ).css( {
                         position:   'fixed'
@@ -247,8 +250,8 @@
                     }, 1000 );
                 }
                 
-                if ( CMVDF.tool >= 7634 ) {
-                    console.log( 'boom' );
+                if ( CMVDF.tool == backgroundHeight ) {
+                    
                     $( '.rocket' ).css( {
                         position:   'absolute'
                     } );
