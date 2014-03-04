@@ -1,0 +1,76 @@
+doctype html
+//[if lt IE 7]>      <html lang="es" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]
+//[if IE 7]>         <html lang="es" class="no-js lt-ie9 lt-ie8"> <![endif]
+//[if IE 8]>         <html lang="es" class="no-js lt-ie9"> <![endif]
+//[if gt IE 8]><!
+html(lang="es" class="no-js") <!--<![endif]-->
+    include head
+    body.home#one
+        //[if lt IE 7]><p class="browsehappy">Estás usando un navegador <strong>caduco</strong>. Por favor, <a href="http://browsehappy.com/">actualiza tu navegador</a> para mejorar tu experiencia.</p><![endif]
+        a(href="#" title="Abrir Respuesta" target="_self" rel=".alert_box").alert_trigger
+        div#nav
+            nav
+                ul
+                    li.active
+                        p. Digital Friday
+                    li
+                        a(href="#" title="CMV Asfalto")
+                            img(src="img/digital_friday/cmv_header.png" alt="Logo CMV" width="46" height="26")
+                    li
+                        p. Sesión {session}
+        div#background
+            h3. Sala de Juntas
+            h4. 7 de Marzo 10:00 AM
+            form(action="Code/snippets/controller.php?action=checkIn" method="post" accept-charset="utf-8")
+                fieldset
+                    input(id="mail_verifier" type="hidden" name="mail_verifier" value="{mail}")
+                    input(id="session" type="hidden" name="session" value="{session}")
+                    input(id="submit_button" type="submit" name="submit_button" value="CHECK IN")
+            figure#six.clouds.scene
+                img(src="img/digital_friday/logo_fnl_digital_friday.png" alt="logo_fnl_digital_friday" width="350" height="390" data-depth="0.20")#DG_Logo.layer
+                img(src="img/digital_friday/joterias_puntos_horizontal.png" alt="Puntos Horizontales" width="51" height="7" data-depth="0.40").points.layer
+                img(src="img/digital_friday/joterias_puntos_horizontal.png" alt="Puntos Horizontales" width="51" height="7" data-depth="0.60").points.layer
+            figure#five.clouds.scene
+                h2#online_offline. ¿Por qué integrar tácticas <br /><span>On-Line y Off-Line?</span>
+                img(src="img/digital_friday/joterias_puntos_horizontal.png" alt="Puntos Horizontales" width="51" height="7" data-depth="1.00").points.layer
+                img(src="img/digital_friday/joteria_azul-1.png" alt="joteria_azul-1" width="154" height="166" data-depth="0.80").triangle.layer
+                img(src="img/digital_friday/nube_5.png" alt="nube_5" width="477" height="216" data-depth="0.60").cloud_two.layer
+                img(src="img/digital_friday/nube4.png" alt="nube4" width="410" height="228" data-depth="0.40").cloud_one.layer
+            figure#fourth.clouds.scene
+                h2#digital_ecosystem. ¿Qué tácticas comprende el gran <br /><span>Ecosistema Digital?</span>
+                img(src="img/digital_friday/joterias_puntos_horizontal.png" alt="Puntos Horizontales" width="51" height="7" data-depth="0.20").points.layer
+                img(src="img/digital_friday/nube4.png" alt="nube4" width="410" height="228" data-depth="0.40").cloud_one.layer
+            figure#third.clouds.scene
+                h2#digital_marketing. ¿Cuál es el proceso del <br /><span>Marketing Digital</span>
+                img(src="img/digital_friday/joterias_puntos_horizontal.png" alt="Puntos Horizontales" width="51" height="7" data-depth="1.00").points.layer
+                img(src="img/digital_friday/nube4.png" alt="nube4" width="410" height="228" data-depth="0.60").cloud_three.layer
+                img(src="img/digital_friday/joteria_azul-1.png" alt="Punto Azul con naranja" width="154" height="166" data-depth="0.30").triangle.layer
+                img(src="img/digital_friday/nube3.png" alt="nube3" width="411" height="183" data-depth="0.70").cloud_two.layer
+                img(src="img/digital_friday/nube2.png" alt="nube2" width="410" height="214" data-depth="0.20").cloud_one.layer
+            figure#second.clouds.scene
+                h2#digital_royal_family. ¿Quiénes son los miembros de la <br /><span>"Digital Royal Family"?</span>
+                img(src="img/digital_friday/joterias_puntos_horizontal.png" alt="Puntos Horizontales" width="51" height="7" data-depth="0.80").points.layer
+                img(src="img/digital_friday/nube3.png" alt="nube3" width="411" height="183" data-depth="0.60").cloud_three.layer
+                img(src="img/digital_friday/nube2.png" alt="nube2" width="410" height="214" data-depth="0.20").cloud_two.layer
+                img(src="img/digital_friday/nube1.png" alt="nube1" width="410" height="291" data-depth="0.40").cloud_one.layer
+            figure#first.clouds.scene
+                img(src="img/digital_friday/nube_5.png" alt="Ilustración de nube" width="477" height="216" data-depth="0.30").cloud_two.layer
+                img(src="img/digital_friday/nube1.png" alt="Ilustración de nube" width="410" height="291" data-depth="0.80").cloud_one.layer
+            h1. Inicia el viaje el <span>mundo digital</span>
+            figure.instructions.scene.active
+                img(src="img/digital_friday/sesion1.png" alt="Número de sesión" width="146" height="146" data-depth="0.80").session.layer
+                img(src="img/digital_friday/joterias_puntos_vertical.png" alt="Puntos Verticales" width="7" height="51" data-depth="0.30").vertical_points.layer
+                img(src="img/digital_friday/scroll_flechas.png" alt="Instrucciones de hacer scroll vertical" width="78" height="49" data-depth="0.20").arrow.layer
+                img(src="img/digital_friday/scroll_mano.png" alt="Ilustración de mano" width="36" height="75" data-depth="0.60").hands.layer
+            p.scroll
+                <span>Scrollea</span> <span>para despegar</span>
+            figure.rocket
+                img(src="img/digital_friday/cohete_1.png" alt="Ilustración de cohete" width="130" height="361")
+            footer
+                figure.ground
+                    img(src="img/digital_friday/footer_tierra.png" alt="Ilustración de tierra" width="1280" height="178")
+            div.alert_background
+            div.alert_box
+                a(title="Cerrar").close. Cerrar
+                h2
+        include footer
