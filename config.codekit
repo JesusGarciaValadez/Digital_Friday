@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "16653",
+"creatorBuild": "16844",
 "files": {
 	"\/apple-touch-icon-114x114-precomposed.png": {
 		"fileType": 32768,
@@ -10,7 +10,7 @@
 		"inputAbbreviatedPath": "\/apple-touch-icon-114x114-precomposed.png",
 		"outputAbbreviatedPath": "\/apple-touch-icon-114x114-precomposed.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/apple-touch-icon-144x144-precomposed.png": {
 		"fileType": 32768,
@@ -20,7 +20,7 @@
 		"inputAbbreviatedPath": "\/apple-touch-icon-144x144-precomposed.png",
 		"outputAbbreviatedPath": "\/apple-touch-icon-144x144-precomposed.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/apple-touch-icon-57x57-precomposed.png": {
 		"fileType": 32768,
@@ -30,7 +30,7 @@
 		"inputAbbreviatedPath": "\/apple-touch-icon-57x57-precomposed.png",
 		"outputAbbreviatedPath": "\/apple-touch-icon-57x57-precomposed.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/apple-touch-icon-72x72-precomposed.png": {
 		"fileType": 32768,
@@ -40,7 +40,7 @@
 		"inputAbbreviatedPath": "\/apple-touch-icon-72x72-precomposed.png",
 		"outputAbbreviatedPath": "\/apple-touch-icon-72x72-precomposed.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/apple-touch-icon-precomposed.png": {
 		"fileType": 32768,
@@ -50,7 +50,7 @@
 		"inputAbbreviatedPath": "\/apple-touch-icon-precomposed.png",
 		"outputAbbreviatedPath": "\/apple-touch-icon-precomposed.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/apple-touch-icon.png": {
 		"fileType": 32768,
@@ -60,7 +60,7 @@
 		"inputAbbreviatedPath": "\/apple-touch-icon.png",
 		"outputAbbreviatedPath": "\/apple-touch-icon.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/html5-boilerplate\/404.html": {
 		"fileType": 8192,
@@ -230,7 +230,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/main.js",
-		"outputAbbreviatedPath": "\/js\/main.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/min\/main-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -240,7 +240,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/plugins.js",
-		"outputAbbreviatedPath": "\/js\/plugins.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/min\/plugins-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -250,7 +250,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/vendor\/jquery-1.10.2.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/js\/jquery-1.10.2.min.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/vendor\/min\/jquery-1.10.2.min-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -260,7 +260,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/vendor\/modernizr-2.6.2.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/js\/modernizr-2.6.2.min.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/html5-boilerplate\/js\/vendor\/min\/modernizr-2.6.2.min-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -377,7 +377,7 @@
 		},
 	"\/Code\/templates\/index.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -389,7 +389,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/jade\/footer.jade",
-		"outputAbbreviatedPath": "\/Code\/templates\/footer.html",
+		"outputAbbreviatedPath": "\/Code\/templates\/jade\/footer.html",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
@@ -399,7 +399,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/jade\/head.jade",
-		"outputAbbreviatedPath": "\/Code\/templates\/head.html",
+		"outputAbbreviatedPath": "\/Code\/templates\/jade\/head.html",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
@@ -409,16 +409,16 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/jade\/index.jade",
-		"outputAbbreviatedPath": "\/Code\/templates\/index.html",
+		"outputAbbreviatedPath": "\/Code\/templates\/jade\/index.html",
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1
+		"outputStyle": 0
 		},
 	"\/Code\/templates\/js\/CMVDF.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/CMVDF.js",
-		"outputAbbreviatedPath": "\/js\/CMVDF.min.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/CMVDF-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -428,8 +428,258 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.js",
-		"outputAbbreviatedPath": "\/js\/main.min.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js",
 		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.BACKUP.2470.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.BACKUP.2470.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.BACKUP.2470-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.BACKUP.2563.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.BACKUP.2563.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.BACKUP.2563-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.BACKUP.2658.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.BACKUP.2658.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.BACKUP.2658-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.BACKUP.2719.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.BACKUP.2719.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.BACKUP.2719-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.BACKUP.2843.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.BACKUP.2843.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.BACKUP.2843-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.BACKUP.2945.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.BACKUP.2945.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.BACKUP.2945-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.BASE.2470.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.BASE.2470.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.BASE.2470-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.BASE.2563.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.BASE.2563.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.BASE.2563-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.BASE.2658.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.BASE.2658.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.BASE.2658-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.BASE.2719.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.BASE.2719.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.BASE.2719-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.BASE.2843.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.BASE.2843.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.BASE.2843-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.BASE.2945.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.BASE.2945.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.BASE.2945-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.LOCAL.2470.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.LOCAL.2470.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.LOCAL.2470-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.LOCAL.2563.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.LOCAL.2563.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.LOCAL.2563-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.LOCAL.2658.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.LOCAL.2658.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.LOCAL.2658-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.LOCAL.2719.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.LOCAL.2719.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.LOCAL.2719-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.LOCAL.2843.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.LOCAL.2843.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.LOCAL.2843-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.LOCAL.2945.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.LOCAL.2945.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.LOCAL.2945-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.REMOTE.2470.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.REMOTE.2470.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.REMOTE.2470-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.REMOTE.2563.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.REMOTE.2563.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.REMOTE.2563-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.REMOTE.2658.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.REMOTE.2658.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.REMOTE.2658-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.REMOTE.2719.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.REMOTE.2719.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.REMOTE.2719-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.REMOTE.2843.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.REMOTE.2843.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.REMOTE.2843-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/main.min.js.REMOTE.2945.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/main.min.js.REMOTE.2945.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/main.min.js.REMOTE.2945-ck.js",
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -438,7 +688,57 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/js\/plugins.js",
-		"outputAbbreviatedPath": "\/js\/plugins.min.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/plugins.min.js",
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/plugins.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/plugins.min.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/plugins.min-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/plugins.min.js.BACKUP.3014.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/plugins.min.js.BACKUP.3014.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/plugins.min.js.BACKUP.3014-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/plugins.min.js.BASE.3014.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/plugins.min.js.BASE.3014.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/plugins.min.js.BASE.3014-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/plugins.min.js.LOCAL.3014.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/plugins.min.js.LOCAL.3014.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/plugins.min.js.LOCAL.3014-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/js\/plugins.min.js.REMOTE.3014.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/js\/plugins.min.js.REMOTE.3014.js",
+		"outputAbbreviatedPath": "\/Code\/templates\/js\/min\/plugins.min.js.REMOTE.3014-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -482,68 +782,68 @@
 		"processed": 0
 		},
 	"\/Code\/templates\/sass\/home.scss": {
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"debugStyle": 0,
-		"decimalPrecision": 2,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/sass\/home.scss",
-		"outputAbbreviatedPath": "\/css\/home.css",
+		"outputAbbreviatedPath": "\/Code\/templates\/css\/home.css",
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
 	"\/Code\/templates\/sass\/jquery.fullPage.scss": {
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"debugStyle": 0,
-		"decimalPrecision": 2,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/sass\/jquery.fullPage.scss",
-		"outputAbbreviatedPath": "\/css\/jquery.fullPage.css",
+		"outputAbbreviatedPath": "\/Code\/templates\/css\/jquery.fullPage.css",
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
 	"\/Code\/templates\/sass\/main.scss": {
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"debugStyle": 0,
-		"decimalPrecision": 2,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/sass\/main.scss",
-		"outputAbbreviatedPath": "\/css\/main.css",
+		"outputAbbreviatedPath": "\/Code\/templates\/css\/main.css",
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
 	"\/Code\/templates\/sass\/normalize.min.scss": {
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"debugStyle": 0,
-		"decimalPrecision": 2,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/sass\/normalize.min.scss",
-		"outputAbbreviatedPath": "\/css\/normalize.min.css",
+		"outputAbbreviatedPath": "\/Code\/templates\/css\/normalize.min.css",
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
 	"\/css\/main.css": {
 		"fileType": 16,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/main.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -740,29 +1040,22 @@
 		"processed": 0
 		},
 	"\/img\/digital_friday\/nube_5.png": {
-	"\/Code\/templates\/img\/digital_friday\/nube_5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 60196,
 		"inputAbbreviatedPath": "\/img\/digital_friday\/nube_5.png",
 		"outputAbbreviatedPath": "\/img\/digital_friday\/nube_5.png",
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/nube_5.png",
-		"outputAbbreviatedPath": "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/nube_5.png",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
-		"processed": 1
 		},
 	"\/img\/digital_friday\/scroll_flechas.png": {
-	"\/Code\/templates\/img\/digital_friday\/scroll_flechas.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 2499,
 		"inputAbbreviatedPath": "\/img\/digital_friday\/scroll_flechas.png",
 		"outputAbbreviatedPath": "\/img\/digital_friday\/scroll_flechas.png",
-		"inputAbbreviatedPath": "\/Code\/templates\/img\/digital_friday\/scroll_flechas.png",
-		"outputAbbreviatedPath": "\/Applications\/XAMPP\/xamppfiles\/htdocs\/CMV\/Digital_Friday\/Code\/templates\/img\/digital_friday\/scroll_flechas.png",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -796,40 +1089,40 @@
 		},
 	"\/js\/CMVDF.min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/CMVDF.min.js",
-		"outputAbbreviatedPath": "\/js\/CMVDF.min.min.js",
+		"outputAbbreviatedPath": "\/js\/min\/CMVDF.min-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/js\/main.min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/main.min.js",
-		"outputAbbreviatedPath": "\/js\/main.min.min.js",
+		"outputAbbreviatedPath": "\/js\/min\/main.min-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/js\/plugins.min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/plugins.min.js",
-		"outputAbbreviatedPath": "\/js\/plugins.min.min.js",
+		"outputAbbreviatedPath": "\/js\/min\/plugins.min-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/js\/vendor\/additional-methods.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/additional-methods.js",
-		"outputAbbreviatedPath": "\/js\/additional-methods.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/additional-methods-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -839,7 +1132,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery-1.8.3.min.js",
-		"outputAbbreviatedPath": "\/js\/jquery-1.8.3.min.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/jquery-1.8.3.min-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -849,7 +1142,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery-1.9.0.min.js",
-		"outputAbbreviatedPath": "\/js\/jquery-1.9.0.min.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/jquery-1.9.0.min-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -859,17 +1152,17 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery-ui-1.10.4.custom.js",
-		"outputAbbreviatedPath": "\/js\/jquery-ui-1.10.4.custom.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/jquery-ui-1.10.4.custom-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/js\/vendor\/jquery.form.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.form.js",
-		"outputAbbreviatedPath": "\/js\/jquery.form.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/jquery.form-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -879,17 +1172,17 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.fullPage.js",
-		"outputAbbreviatedPath": "\/js\/jquery.fullPage.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/jquery.fullPage-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/js\/vendor\/jquery.parallax.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.parallax.js",
-		"outputAbbreviatedPath": "\/js\/jquery.parallax.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/jquery.parallax-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -899,27 +1192,27 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.scrollTo-1.4.3.1-min.js",
-		"outputAbbreviatedPath": "\/js\/jquery.scrollTo-1.4.3.1-min.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/jquery.scrollTo-1.4.3.1-min-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/js\/vendor\/jquery.scrollTo-1.4.3.1.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.scrollTo-1.4.3.1.js",
-		"outputAbbreviatedPath": "\/js\/jquery.scrollTo-1.4.3.1.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/jquery.scrollTo-1.4.3.1-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/js\/vendor\/jquery.tools.custom.min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.tools.custom.min.js",
-		"outputAbbreviatedPath": "\/js\/jquery.tools.custom.min.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/jquery.tools.custom.min-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -929,7 +1222,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.tools.min.js",
-		"outputAbbreviatedPath": "\/js\/jquery.tools.min.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/jquery.tools.min-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -939,17 +1232,17 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.uniform.js",
-		"outputAbbreviatedPath": "\/js\/jquery.uniform.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/jquery.uniform-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/js\/vendor\/jquery.validate.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.validate.js",
-		"outputAbbreviatedPath": "\/js\/jquery.validate.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/jquery.validate-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -959,7 +1252,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.validate.min.js",
-		"outputAbbreviatedPath": "\/js\/jquery.validate.min.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/jquery.validate.min-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -969,7 +1262,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/modernizr-2.6.2.min.js",
-		"outputAbbreviatedPath": "\/js\/modernizr-2.6.2.min.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/modernizr-2.6.2.min-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -979,7 +1272,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/prefixfree.min.js",
-		"outputAbbreviatedPath": "\/js\/prefixfree.min.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/prefixfree.min-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -996,7 +1289,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 72256,
+		"initialSize": 106156,
 		"inputAbbreviatedPath": "\/mailing\/mail1\/imgs\/body.jpg",
 		"outputAbbreviatedPath": "\/mailing\/mail1\/imgs\/body.jpg",
 		"outputPathIsSetByUser": 0,
@@ -1006,7 +1299,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 17674,
+		"initialSize": 33889,
 		"inputAbbreviatedPath": "\/mailing\/mail1\/imgs\/button.jpg",
 		"outputAbbreviatedPath": "\/mailing\/mail1\/imgs\/button.jpg",
 		"outputPathIsSetByUser": 0,
@@ -1016,7 +1309,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 49847,
+		"initialSize": 80826,
 		"inputAbbreviatedPath": "\/mailing\/mail1\/imgs\/footer.jpg",
 		"outputAbbreviatedPath": "\/mailing\/mail1\/imgs\/footer.jpg",
 		"outputPathIsSetByUser": 0,
@@ -1026,7 +1319,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 49201,
+		"initialSize": 79120,
 		"inputAbbreviatedPath": "\/mailing\/mail1\/imgs\/head.jpg",
 		"outputAbbreviatedPath": "\/mailing\/mail1\/imgs\/head.jpg",
 		"outputPathIsSetByUser": 0,
@@ -1035,52 +1328,8 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Jesús García Valadez",
+"lastSavedByUser": "Jesús Antonio García Valadez",
 "manualImportLinks": {
-	"\/Code\/templates\/js\/plugins.js": [
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.form.js",
-			"position": 0,
-			"type": 1
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.validate.js",
-			"position": 1,
-			"type": 1
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/vendor\/additional-methods.js",
-			"position": 2,
-			"type": 1
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.tools.custom.min.js",
-			"position": 3,
-			"type": 1
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.scrollTo-1.4.3.1.js",
-			"position": 4,
-			"type": 1
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.parallax.js",
-			"position": 5,
-			"type": 1
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/Code\/templates\/js\/CMVDF.js",
-			"position": 6,
-			"type": 1
-			}
-		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
@@ -1089,17 +1338,17 @@
 	"iconImageName": "meme-ceiling"
 	},
 "projectSettings": {
-	"alwaysUseExternalServer": 1,
+	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, ff 17, opera 12.1",
 	"autoSyncProjectSettingsFile": 1,
 	"browserRefreshDelay": 0,
-	"coffeeAutoOutputPathRelativePath": "..\/..\/js\/",
+	"coffeeAutoOutputPathRelativePath": "",
 	"coffeeAutoOutputPathReplace1": "",
 	"coffeeAutoOutputPathReplace2": "",
-	"coffeeAutoOutputPathStyle": 2,
-	"coffeeCreateSourceMap": 1,
+	"coffeeAutoOutputPathStyle": 0,
+	"coffeeCreateSourceMap": 0,
 	"coffeeLintFlags2": {
 		"arrow_spacing": {
 			"active": 0,
@@ -1109,12 +1358,16 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"colon_assignment_spacing": {
+			"active": 0,
+			"flagValue": 1
+			},
 		"cyclomatic_complexity": {
 			"active": 0,
 			"flagValue": 10
 			},
 		"duplicate_key": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"empty_constructor_needs_parens": {
@@ -1133,9 +1386,17 @@
 			"active": 0,
 			"flagValue": 150
 			},
+		"missing_fat_arrows": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"newlines_after_classes": {
 			"active": 0,
 			"flagValue": 3
+			},
+		"no-unnecessary_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
 			},
 		"no_backticks": {
 			"active": 1,
@@ -1189,7 +1450,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/localhost:80\/CMV\/digitalfriday\/",
+	"externalServerAddress": "http:\/\/localhost:8888",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathRelativePath": "",
@@ -1203,21 +1464,21 @@
 	"hamlUseCDATA": 0,
 	"hamlUseDoubleQuotes": 0,
 	"hamlUseUnixNewlines": 0,
-	"jadeAutoOutputPathRelativePath": "..\/",
+	"jadeAutoOutputPathRelativePath": "",
 	"jadeAutoOutputPathReplace1": "",
 	"jadeAutoOutputPathReplace2": "",
-	"jadeAutoOutputPathStyle": 2,
+	"jadeAutoOutputPathStyle": 0,
 	"jadeCompileDebug": 1,
 	"jadeOutputStyle": 0,
-	"javascriptAutoOutputPathRelativePath": "..\/..\/..\/js\/",
+	"javascriptAutoOutputPathRelativePath": "\/min",
 	"javascriptAutoOutputPathReplace1": "",
 	"javascriptAutoOutputPathReplace2": "",
 	"javascriptAutoOutputPathStyle": 2,
 	"javascriptCreateSourceMap": 1,
 	"javascriptOutputStyle": 1,
-	"javascriptOutputSuffix": ".min",
+	"javascriptOutputSuffix": "-ck",
 	"javascriptSyntaxCheckerStyle": 1,
-	"jsCheckerReservedNamesString": "jQuery,$,_,CMVDG,_CMVDG,console,_console",
+	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
@@ -1634,19 +1895,19 @@
 	"markdownEnableFootnotes": 0,
 	"markdownEnableSmartyPants": 1,
 	"markdownExpandTabs": 1,
-	"reloadFileURLs": 1,
-	"sassAutoOutputPathRelativePath": "..\/..\/..\/css\/",
+	"reloadFileURLs": 0,
+	"sassAutoOutputPathRelativePath": "..\/css",
 	"sassAutoOutputPathReplace1": "sass",
 	"sassAutoOutputPathReplace2": "css",
 	"sassAutoOutputPathStyle": 2,
-	"sassCreateSourceMap": 1,
+	"sassCreateSourceMap": 0,
 	"sassDebugStyle": 0,
-	"sassDecimalPrecision": 2,
-	"sassOutputStyle": 3,
+	"sassDecimalPrecision": 5,
+	"sassOutputStyle": 0,
 	"sassUseLibsass": 0,
-	"shouldRunAutoprefixer": 1,
+	"shouldRunAutoprefixer": 0,
 	"shouldRunBless": 0,
-	"skippedItemsString": ".svn, .git, .hg, log",
+	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs",
 	"slimAutoOutputPathRelativePath": "",
 	"slimAutoOutputPathReplace1": "",
 	"slimAutoOutputPathReplace2": "",
