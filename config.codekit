@@ -377,7 +377,7 @@
 		},
 	"\/Code\/templates\/index.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -389,9 +389,9 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/jade\/footer.jade",
-		"outputAbbreviatedPath": "\/Code\/templates\/jade\/footer.html",
+		"outputAbbreviatedPath": "\/Code\/templates\/footer.html",
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/Code\/templates\/jade\/head.jade": {
 		"compileDebug": 1,
@@ -399,9 +399,9 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/jade\/head.jade",
-		"outputAbbreviatedPath": "\/Code\/templates\/jade\/head.html",
+		"outputAbbreviatedPath": "\/Code\/templates\/head.html",
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/Code\/templates\/jade\/index.jade": {
 		"compileDebug": 1,
@@ -409,9 +409,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/jade\/index.jade",
-		"outputAbbreviatedPath": "\/Code\/templates\/jade\/index.html",
+		"outputAbbreviatedPath": "\/Code\/templates\/index.html",
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/Code\/templates\/js\/CMVDF.js": {
 		"fileType": 64,
@@ -1464,12 +1464,12 @@
 	"hamlUseCDATA": 0,
 	"hamlUseDoubleQuotes": 0,
 	"hamlUseUnixNewlines": 0,
-	"jadeAutoOutputPathRelativePath": "",
+	"jadeAutoOutputPathRelativePath": "..\/",
 	"jadeAutoOutputPathReplace1": "",
 	"jadeAutoOutputPathReplace2": "",
-	"jadeAutoOutputPathStyle": 0,
+	"jadeAutoOutputPathStyle": 2,
 	"jadeCompileDebug": 1,
-	"jadeOutputStyle": 0,
+	"jadeOutputStyle": 1,
 	"javascriptAutoOutputPathRelativePath": "\/min",
 	"javascriptAutoOutputPathReplace1": "",
 	"javascriptAutoOutputPathReplace2": "",
