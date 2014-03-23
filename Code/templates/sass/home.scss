@@ -64,7 +64,9 @@
         h2{
             @include font-mask( $text_gray, em( 35, 16 ), em( 35, 35 ), normal );
             text-transform: uppercase;
-            span{ color: $text_blue; font-weight: bold; }
+            span{
+                @include font-mask( $text_blue, em( 35, 35 ), em( 35, 35 ), $avenirBold );
+            }
         }
         figure{
             display: block;
@@ -79,7 +81,15 @@
         }
         .clouds{
             @extend .clearfix;
-            img{ position: absolute; }
+            img{
+                position: absolute;
+                &:nth-child( even ){
+                    z-index: 2;
+                }
+                &:nth-child( odd ){
+                    z-index: 3;
+                }
+            }
         }
         h3, h4{
             margin: 0;
@@ -88,13 +98,14 @@
             text-align: center;
             text-transform: uppercase;
             width: 100%;
+            z-index: 3;
         }
         h3{ 
-            @include font-mask( $grey, em( 25, 16 ), em( 25, 25 ), bold );
+            @include font-mask( #030303, em( 25, 16 ), em( 25, 25 ), normal, $avenirBold );
             top: em( 550, 25 );
         }
         h4{ 
-            @include font-mask( $grey, em( 25, 16 ), em( 25, 25 ), normal );
+            @include font-mask( #98999B, em( 25, 16 ), em( 25, 25 ), normal );
             top: em( 590, 25 );
         }
         form{
@@ -113,7 +124,7 @@
                 margin: 0 auto;
                 padding: 0;
                 #submit_button{
-                    @include font-mask( #FFF, em( 30, 16 ), em( 40, 30 ), bold );
+                    @include font-mask( #FFF, em( 30, 16 ), em( 40, 30 ), normal, $avenirBold );
                     background: #F56818;
                     border: 1px solid #F75F00;
                     height: 100%;
@@ -129,6 +140,7 @@
                 left: auto !important;
                 margin: 130px auto 0;
                 position: relative;
+                z-index: 3;
             }
             .points{ position: absolute; top: em( 500, 16 ); }
         }
@@ -225,7 +237,7 @@
                 left: 150px;
                 position: absolute;
                 top: 54%;
-                z-index: 5;
+                z-index: 2;
             }
             .cloud_three,
             .cloud_two,
@@ -257,10 +269,14 @@
             position: absolute;
             text-align: center;
             text-transform: uppercase;
-            span{ color: $text_blue; font-weight: bold; }
+            span{
+                @include font-mask( $text_blue, em( 35, 35 ), em( 35, 35 ), normal, $avenirBold );
+            }
         }
         .instructions{
             @extend .clearfix;
+            position: relative;
+            z-index: 3;
             img{ position: absolute; }
             .session{ bottom: em( 500, 16 ); }
             .vertical_points{ bottom: em( 350, 16 );}
@@ -277,27 +293,28 @@
         }
         .scroll{
             @extend .clearfix;
-            @include font-mask( $text_gray, em( 18, 16 ), em( 18, 18 ), normal );
-            bottom: em( 120, 16 );
+            @include font-mask( #98999B, em( 12, 16 ), em( 18, 12 ), normal );
+            bottom: em( 125, 16 );
             display:block;
-            left: 23px;
+            left: 18px;
             margin: 0 auto;
             text-align: center;
             text-transform:uppercase;
             position: relative;
-            width:380px;
+            width:240px;
             span:nth-child( 1n + 1 ){ float: left; }
             span:nth-child( 1n + 2 ){ float: right; }
         }
         .rocket{
-            bottom: -155px;
             display: block;
             height: em( 361, 16 ) !important;
             position: fixed;
             width: em( 130, 16 );
+            z-index: 2;
             img{}
         }
         footer{
+            height: em( 89, 16 );
             position: relative;
             width: 100%;
             z-index: 5;
@@ -307,6 +324,14 @@
                     width: 100% !important;
                 }
             }
+        }
+        .alert_background{
+                display: block;
+                img{
+                    display: block;
+                    margin: 0 auto;
+                    position: relative;
+                }
         }
     }
 }

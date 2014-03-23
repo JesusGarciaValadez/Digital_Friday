@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'AvenirNextBold';
+    src: url('avenirnext-bold.eot');
+    src: url('avenirnext-bold.eot') format('embedded-opentype'),
+         url('avenirnext-bold.woff') format('woff'),
+         url('avenirnext-bold.ttf') format('truetype'),
+         url('avenirnext-bold.svg#AvenirNextBold') format('svg');
+}

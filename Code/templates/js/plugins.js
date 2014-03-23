@@ -23,10 +23,10 @@
 
 // Place any jQuery/helper plugins in here.
 
-jQuery.fn.exists            = function(){return this.length>0;}
+jQuery.fn.exists            = function(){return this.length>0;};
 jQuery.fn.centerWidth       = function(){
     var winWidth;
-    if ( $.browser.msie && $.browser.version == '8.0' ) {
+    if ( $.browser.msie && $.browser.version === '8.0' ) {
         
         winWidth    = $(window).width() / 2;
     } else {
@@ -44,10 +44,10 @@ jQuery.fn.centerWidth       = function(){
     var elemLeft    = winWidth - elemWidth;
     
     this.css( 'left', elemLeft + 'px' );
-}
+};
 jQuery.fn.centerHeight      = function(){
     var winHeight;
-    if ( $.browser.msie && $.browser.version == '8.0' ) {
+    if ( $.browser.msie && $.browser.version === '8.0' ) {
         
         winHeight = $(window).height() / 2;
     } else {
@@ -59,5 +59,13 @@ jQuery.fn.centerHeight      = function(){
     var elemTop = winHeight - elemHeight;
 
     this.css( 'top', elemTop + 'px' );
-}
+};
 
+//  @codekit-append "vendor/jquery.form.js";
+//  @codekit-append "vendor/jquery.validate.js";
+//  @codekit-append "vendor/additional-methods.js";
+//  @codekit-append "vendor/jquery.tools.custom.min.js";
+//  @codekit-append "vendor/jquery-ui-1.10.4.custom.js";
+//  @codekit-append "vendor/jquery.uniform.js";
+//  @codekit-append "vendor/jquery.scrollTo-1.4.3.1-min.js";
+//  @codekit-append "CMVDF.js";
